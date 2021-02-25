@@ -1,0 +1,345 @@
+body {
+  background-color: #00264C;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+
+hr {
+  background-color: #4D083E;
+}
+
+/* font-family: 'Montserrat', sans-serif; */
+
+footer {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #36454F;
+  margin-top: -3px;
+  padding: 10px 0px;
+  background-color: #A3ABB0;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.25rem;
+  line-height: 1.4rem;
+}
+
+ul {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* project card css */
+/* guess who learned adjacent? */
+span.card-title+p {
+  margin-top: 15px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-title {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.card-action {
+  padding-bottom: 30px;
+}
+
+
+.DGCpadding {
+  padding-left: 7%;
+}
+
+/* #thbLogo {
+  width: 25%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+} */
+
+#seaTurtleLogo {
+  width: 70%;
+  height: auto;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#placeholderFor2020 {
+  width: 87%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* skills card css */
+.rowTitle{
+  padding-top: 10px;
+}
+
+
+/* navbar css */
+ul.navLi li {
+  display: inline;
+  padding-left: 16px;
+}
+
+.banner {
+  width: 100%;
+  height: auto;
+  margin-top: 63px;
+}
+
+
+.navLink {
+  color: white;
+  font-size: 1.25rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+#headerLinksBucket {
+  /* the navy */
+  /* background-color:#00264C; */
+  /* background-color: #4D083E;  */
+  background-color: #36454F;
+  padding: 20px 0px;
+  top: 0;
+  width: 100%;
+  border-bottom: #A3ABB0 solid 5px;
+  z-index: 1000;
+}
+
+.notSoBig {
+  width: 25%;
+}
+
+
+.socialMediaicon {
+  margin-bottom: 12px;
+}
+
+
+
+
+
+.name {
+  display: block;
+}
+
+.navbar-toggler {
+  border: none;
+  text-align: right;
+}
+
+.navbar-toggler-icon {
+  color: rebeccapurple;
+}
+
+
+
+.card {
+  border: none;
+}
+
+.card-text {
+  font-family: 'Raleway', sans-serif;
+}
+
+
+
+.view {
+  text-align: center;
+}
+
+.vlleft {
+  padding-left: 10px;
+  height: 100%;
+  border-left: solid 1px #A3ABB0 ;
+}
+
+.center {
+  text-align: center;
+}
+
+.contactList {
+  text-align: left;
+}
+
+.material-icons {
+  font-size: 20px;
+  color: black;
+  line-height: 0.7;
+}
+
+i.material-icons {
+  margin-bottom: -20px;
+}
+
+.hamburgerIcon {
+  display: none;
+}
+
+#skillsTitle {
+  text-align: left;
+}
+
+#contactTitle {
+  text-align: left;
+}
+
+#resume {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+#emailIcon {
+  line-height: 0.7;
+}
+
+
+
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #thbLogo {
+      width: 92%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  #seaTurtleLogo {
+      width: 70%;
+      height: auto;
+      margin-top: 25px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+
+@media only screen and (min-width: 2000px) {
+  #thbLogo {
+      width: 90%;
+      height: auto;
+      margin-top: 11%;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  #seaTurtleLogo {
+      width: 81%;
+      height: auto;
+
+  }
+
+  #placeholderFor2020 {
+      width: 86%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+  .card-image {
+      display: none;
+  }
+
+
+
+  .navLink {
+      font-size: 1.25rem;
+      padding: 7px 16px;
+      display: block;
+      text-decoration: none;
+      background: #36454F;
+      color: #D4D0D0;
+  }
+
+  .hamburgerIcon {
+      background: black;
+      display: block;
+      color: White;
+      position: absolute;
+      right: 10px;
+      top: 20px;
+  }
+
+  #hamburgerIconStyling {
+      height: 50%;
+  }
+
+  #headerLinksBucket {
+      display: none;
+      top: 8%;
+      border: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 767px) {
+
+
+  .navLink {
+      font-size: 1.75rem;
+      padding: 7px 16px;
+      display: block;
+      text-decoration: none;
+      background: #36454F;
+      color: #D4D0D0;
+  }
+
+  .card-image {
+      display: none;
+  }
+
+  .hamburgerIcon {
+      background: black;
+      display: block;
+      color: White;
+      position: absolute;
+      right: 10px;
+      top: 20px;
+      height: 5rem;
+  }
+
+  #hamburgerIconStyling {
+      height: 2rem;
+  }
+
+  #headerLinksBucket {
+      display: none;
+      top: 5%;
+  }
+
+}
