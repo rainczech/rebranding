@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Grace Ho</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
+  <!-- Compiled and minified CSS Materialize-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+</head>
+
+<body>
+  <header>
+    <div id="headerLinksBucket">
+      <ul class="navLi">
+        <li><a class="navLink" href="aboutme.html">About Me</a></li>
+        <li><a class="navLink" href="skills.html">Skills</a></li>
+        <li><a class="navLink" href="projects.html">Projects</a></li>
+        <li><a class="navLink" href="#contactBM">Contact Me</a></li>
+      </ul>
+    </div>
+    <a href="javascript:void(0);" class="icon hamburgerIcon" onclick="hamburgerToggle()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </header>
+
+
+  <main>
+    <div class="container">
+      <div class="row">
+        <h2 class="white-text">
+          Class and Freelance Work
+        </h2>
+        <div class="col m4" >
+          <ul class="collection" id="dynamicProjects">
+          </ul>
+        </div>
+        <div class="col m8">
+          <div class="card large">
+            <h2 class="card-title" id="projectTitle">Project Title Goes Here</h2>
+            <div class="card-content">
+              <p id="projectSummary">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda pariatur sapiente labore ipsa
+                dolorem illum repellendus totam nulla quod soluta commodi nostrum qui odit dolore, dolorum, sed voluptas
+                consequuntur repudiandae.
+              </p>
+              <hr>
+              <div id="chipContainer">
+                <div class="chip">MySQL</div>
+                <div class="chip">Sequelize</div>
+                <div class="chip">Handlebars.js</div>
+                <div class="chip">Materialize CSS</div>
+                <div class="chip">OAuth.io</div>
+                <div class="card-action">
+                  <p class="left"><a href="http://www.testthisfor.me" target="_blank" id="viewSiteLink">View Site</a>
+                  </p>
+                  <p class="left"><a href="https://github.com/TyPhyter/TestThisFor.Me" target="_blank"
+                      id="viewSourceLink">View Source</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="row">
+          <h2 class="white-text">
+            Class and Freelance Work
+          </h2>
+        </div>
+        <div class="row flex">
+          <!-- project 1 -->
+          <div class="col m3 s12">
+            <div class="card large sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator responsive-img" src="./assets/images/IconsAndLogos/ttfm-logo-clr1.svg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">TTF.Me<i
+                    class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-action">
+                <div class="valign-wrapper">
+                  <p class="left"><a href="http://www.testthisfor.me" target="_blank">View Site</a></p>
+                  <p class="left"><a href="https://github.com/TyPhyter/TestThisFor.Me" target="_blank">View Source</a>
+                  </p>
+                </div>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">TestThisFor.Me<i
+                    class="material-icons right">close</i></span>
+                <p> A collaborative project where a peer based review system for web developers was created.</p>
+                <br>
+                <p> This
+                  project fills a need for developers who need other developers to test their complete projects or
+                  blocks of code to find any unknown bugs or test edge cases.</p>
+                <hr>
+                <div class="chip">MySQL</div>
+                <div class="chip">Sequelize</div>
+                <div class="chip">Handlebars.js</div>
+                <div class="chip">Materialize CSS</div>
+                <div class="chip">OAuth.io</div>
+              </div>
+            </div>
+          </div>
+          <!-- project 2 -->
+          <div class="col m3 s12">
+            <div class="card large sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img id="thbLogo" class="activator responsive-img"
+                  src="./assets/images/IconsAndLogos/TheHonoraryBridesmaid-Logo-CMYK.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">THB<i
+                    class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-action">
+                <div class="valign-wrapper">
+                  <p class="left"><a href="http://thehonorarybridesmaid.com" target="_blank">View Site</a></p>
+                  <p class="left"><a href="https://github.com/rainczech/THB" target="_blank">View Source</a></p>
+                </div>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">The Honorary Bridesmaid<i
+                    class="material-icons right">close</i></span>
+                <p> This is a static website I made for a client for her wedding service business
+                  that is also mobile friendly</p>
+                <hr>
+                <div class="chip">Materialize CSS</div>
+                <div class="chip">FormSpree</div>
+                <div class="chip">LightWidget</div>
+              </div>
+            </div>
+          </div>
+          <!-- project 3 -->
+          <div class="col m3 s12">
+            <div class="card large sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator responsive-img" src="./assets/images/IconsAndLogos/ttfm-logo-clr1.svg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">TTF.Me v 2.0<i
+                    class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-action">
+                <div class="valign-wrapper">
+                  <p class="left"><a href="http://www.testthisfor.me" target="_blank">View Site</a></p>
+                  <p class="left"><a href="https://github.com/TyPhyter/TestThisFor.Me" target="_blank">View Source</a>
+                  </p>
+                </div>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">TestThisFor.Me v 2.0<i
+                    class="material-icons right">close</i></span>
+                <p>A refactoring of the TestThisFor.Me into the full MERN stack. </p>
+                <br>
+                <p> Handlebars, SQL, and Sequelize were removed.
+                </p>
+                <br>
+                <p>
+                  What was added: Chrome extention with screenshot capcity and gamification with
+                  badges.</p>
+                <hr>
+                <div class="chip">MongoDB</div>
+                <div class="chip">Mongoose</div>
+                <div class="chip">React.js</div>
+                <div class="chip">Node.js</div>
+                <div class="chip">OAuth.io</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- project 4 -->
+        <div class="row">
+          <div class="col m3 s12">
+            <div class="card large sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator responsive-img" src="./assets/images/IconsAndLogos/ttfm-logo-clr1.svg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">The Flying Mutt<i
+                    class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-action">
+                <div class="valign-wrapper">
+                  <p class="left"><a href="#" target="_blank">View Site</a></p>
+                  <p class="left"><a href="#" target="_blank">View Source</a></p>
+                </div>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">The Flying Mutt<i
+                    class="material-icons right">close</i></span>
+                <p>A refactoring of the TestThisFor.Me into the full MERN stack. </p>
+                <br>
+                <p> Handlebars, SQL, and Sequelize were removed.
+                </p>
+                <br>
+                <p>
+                  What was added: Chrome extention with screenshot capacity and gamification with
+                  badges.</p>
+                <hr>
+                <div class="chip">MongoDB</div>
+                <div class="chip">Mongoose</div>
+                <div class="chip">React.js</div>
+                <div class="chip">Node.js</div>
+                <div class="chip">OAuth.io</div>
+              </div>
+            </div>
+          </div>
+          <!-- project 5 -->
+          <div class="col m3 s12">
+            <div class="card large sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img id="placeholderFor2020" class="activator responsive-img"
+                  src="assets\images\IconsAndLogos\placeholderIcon.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Event Postponed<i
+                    class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-action">
+                <div class="valign-wrapper">
+                  <p class="left"><a href="https://dallasgivecamp.org/" target="_blank">DGC Site</a></p>
+                  <p class="left">2020</p>
+                </div>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+                <p>"Due to the ongoing Covid-19 situation, there will be no GiveCamp 2020 event. We’ll continue
+                  monitoring
+                  the situation closely and look into options to hold a virtual or in-person Spring event in 2021 and/or
+                  our
+                  standard Fall event. More details to come in the following weeks/months"</p>
+
+              </div>
+            </div>
+          </div>
+          <!-- project6 -->
+          <div class="col m3 s12">
+            <div class="card large sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img id="placeholderFor2020" class="activator responsive-img"
+                  src="assets\images\IconsAndLogos\placeholderIcon.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Event Postponed<i
+                    class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-action">
+                <div class="valign-wrapper">
+                  <p class="left"><a href="https://dallasgivecamp.org/" target="_blank">DGC Site</a></p>
+                  <p class="left">2020</p>
+                </div>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+                <p>"Due to the ongoing Covid-19 situation, there will be no GiveCamp 2020 event. We’ll continue
+                  monitoring
+                  the situation closely and look into options to hold a virtual or in-person Spring event in 2021 and/or
+                  our
+                  standard Fall event. More details to come in the following weeks/months"</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <h2 class="white-text">
+            Dallas Give Camp - Pro Bono Hackathon
+          </h2>
+          <p class="white-text center-align">
+            An annual event where developers donate their time, skill, and knowledge for various charities.
+          </p>
+        </div>
+        <div class="row flex">
+          <!--  DGC 2018 -->
+          <div class="col m4 s12">
+            <div class="card sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img id="seaTurtleLogo" class="activator responsive-img"
+                  src="./assets/images/IconsAndLogos/BTP_icon.jpg">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Bermuda Turtle Project<i
+                    class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-action">
+                <div class="valign-wrapper">
+                  <p class="left"><a href="http://bermudaturtleproject.org/" target="_blank">View Site</a></p>
+                  <p class="left">2018</p>
+                  <p class="DGCpadding"><a href="https://dallasgivecamp.org/" target="_blank">DGC SITE</a></p>
+                </div>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Bermuda Turtle Project<i
+                    class="material-icons right">close</i></span>
+                <p>Updated the entire site for the Bermuda Turtle Part, part of the Sea Turtle Conservancy. The design,
+                  structure, and placement was all redone by myself.</p>
+                <br>
+                <p>WordPress was used so non-developers can update the information as necessary independently.</p>
+                <hr>
+                <div class="chip">WordPress</div>
+                <div class="chip">HTML</div>
+                <div class="chip">CSS</div>
+              </div>
+            </div>
+          </div>
+          <!-- DGC 2019 -->
+          <div class="col m4 s12">
+            <div class="card sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img class="activator responsive-img" src="assets\images\IconsAndLogos\TourDeTurtles.PNG">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Tour De Turtles<i
+                    class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-action">
+                <div class="valign-wrapper">
+                  <p class="left"><a href="https://tourdeturtles.org/" target="_blank">View Site</a></p>
+                  <p class="left">2019</p>
+                  <p class="DGCpadding"><a href="https://dallasgivecamp.org/" target="_blank">DGC SITE</a></p>
+                </div>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4">Tour De Turtles 2019<i
+                    class="material-icons right">close</i></span>
+                <p>Udated the site for the Tour De Turtles, part of the Sea Turtle Conservancy. I was responsible for
+                  the
+                  layout and transferring of content from the older site to this new one.</p>
+                <br>
+                <p>WordPress was used so non-developers can update the information as necessary independently.</p>
+                <hr>
+                <div class="chip">WordPress</div>
+                <div class="chip">HTML</div>
+                <div class="chip">CSS</div>
+              </div>
+            </div>
+          </div>
+          <!-- DGC 2020 -->
+          <div class="col m4 s12">
+            <div class="card sticky-action">
+              <div class="card-image waves-effect waves-block waves-light">
+                <img id="placeholderFor2020" class="activator responsive-img"
+                  src="assets\images\IconsAndLogos\placeholderIcon.png">
+              </div>
+              <div class="card-content">
+                <span class="card-title activator grey-text text-darken-4">Event Postponed<i
+                    class="material-icons right">more_vert</i></span>
+              </div>
+              <div class="card-action">
+                <div class="valign-wrapper">
+                  <p class="left"><a href="https://dallasgivecamp.org/" target="_blank">DGC Site</a></p>
+                  <p class="left">2020</p>
+                </div>
+              </div>
+              <div class="card-reveal">
+                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
+                <p>"Due to the ongoing Covid-19 situation, there will be no GiveCamp 2020 event. We’ll continue
+                  monitoring
+                  the situation closely and look into options to hold a virtual or in-person Spring event in 2021 and/or
+                  our
+                  standard Fall event. More details to come in the following weeks/months"</p>
+
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+  </main>
+
+  <footer> © Grace Ho 2018-2020 </footer>
+
+
+
+
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script> -->
+  <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
+  <!-- <script src="assets/js/jQuery35.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/projects.js"></script>
+</body>
+
+</html>
