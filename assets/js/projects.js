@@ -1,21 +1,30 @@
 // globally instantiated variables/objects
 const classAndFreelanceProjects = {
   ttfm: {
-    fullTitle: "Test This For Me",
+    fullTitle: "TestThisFor.Me",
     avatarPic: "assets/images/IconsAndLogos/ttfm-logo-clr1.svg",
     shortDesc: "Group Project For Class",
-    longDesc: "Lorem Ipsum dolor, sit amet consectetur",
-    chipsArray: ["MySQL", "Sequelize", "OAuth.io"],
-    sourceLink: "https://github.com/TyPhyter/TestThisFor.Me",
+    longDesc: "A collaborative project where a peer based review system for web developers was created. <br><br> This project fills a need for developers who need other developers to test their complete projects or blocks of code to find any unknown bugs or test edge cases.",
+    chipsArray: ["MySQL", "Sequelize", "Materialize CSS", "Handlebars.js", "OAuth.io"],
+    sourceLink: "https://github.com/rainczech/TestThisFor.Me",
     deployedLink: "http://www.testthisfor.me"
   },
-  yeet: {
-    fullTitle: "Something else",
+  thb: {
+    fullTitle: "The Honorary Bridesmaid",
+    avatarPic: "./assets/images/IconsAndLogos/TheHonoraryBridesmaid-Logo-CMYK.png",
+    shortDesc: "Freelance Project",
+    longDesc: "A static website I made for a client fo rher wedding service business that is mobile reponsive",
+    chipsArray: ["Materialize CSS", "FormSpree", "LightWidget"],
+    sourceLink: "https://github.com/rainczech/THB",
+    deployedLink: "http://thehonorarybridesmaid.com"
+  },
+  ttfmMern: {
+    fullTitle: "TestThisFor.Me v 2.0",
     avatarPic: "assets/images/IconsAndLogos/ttfm-logo-clr1.svg",
     shortDesc: "Group Project For Class",
-    longDesc: "Lorem Ipsum dolor, sit amet consectetur",
-    chipsArray: ["MySQL", "Sequelize", "OAuth.io"],
-    sourceLink: "https://github.com/TyPhyter/TestThisFor.Me",
+    longDesc: "A collaborative project where a peer based review system for web developers was created. <br><br> This project fills a need for developers who need other developers to test their complete projects or blocks of code to find any unknown bugs or test edge cases.<br><br> Original description of the original project &uarr; <br><br> Version 2.0 is a refactoring of the TestThisFor.Me into the full MERN stack. Handlebars, SQL, and Sequelize were removed and replaced with React.js, MongoDB, and Mongoose. A Chrome extention with screenshot capcity and gamification with badges were added.",
+    chipsArray: ["MongoDB", "Mongoose", "Node.js", "OAuth.io", "React.js"],
+    sourceLink: "https://github.com/rainczech/ttfm-mern",
     deployedLink: "http://www.testthisfor.me"
   }
 }
