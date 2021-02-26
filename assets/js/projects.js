@@ -30,7 +30,7 @@ const makeProjectAvatars = (classAndFreelanceProjects) => {
 };
 
 htmlProjectList.addEventListener("click", function (event, classAndFreelanceProjects) {
-  const selectedProject = event.target;
+  const selectedProject = event.target.closest("li");
   console.log(selectedProject)
   console.log(selectedProject.getAttribute("data-project"));
   for (const prop in classAndFreelanceProjects) {
@@ -39,7 +39,6 @@ htmlProjectList.addEventListener("click", function (event, classAndFreelanceProj
     }
   }
 })
-
 
 
 
