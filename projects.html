@@ -12,7 +12,7 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
     integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
 </head>
@@ -38,162 +38,26 @@
       <div class="row">
         <h2 class="white-text">
           Class and Freelance Work
-        </h2>
-        <div class="col m4" >
+        </h2>  
+        <!-- container for project avatars to populate after dynamically generated-->
+        <div class="col m4">
           <ul class="collection" id="dynamicProjects">
           </ul>
         </div>
+        <!-- container for project details to populate -->
         <div class="col m8">
-          <div class="card large" >
-            <div class="card-content" id="cardInnardsHere" >
-
-            </div>
-          </div>
-        </div>
-
-
-
-
-        <div class="row">
-          <h2 class="white-text">
-            Class and Freelance Work
-          </h2>
-        </div>
-        <div class="row flex">
-          <!-- project 1 -->
-          <!-- project 2 -->
-          <!-- projet 3 -->
-          <div class="col m3 s12">
-            <div class="card large sticky-action">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator responsive-img" src="./assets/images/IconsAndLogos/ttfm-logo-clr1.svg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">TTF.Me v 2.0<i
-                    class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-action">
-                <div class="valign-wrapper">
-                  <p class="left"><a href="http://www.testthisfor.me" target="_blank">View Site</a></p>
-                  <p class="left"><a href="https://github.com/TyPhyter/TestThisFor.Me" target="_blank">View Source</a>
-                  </p>
-                </div>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">TestThisFor.Me v 2.0<i
-                    class="material-icons right">close</i></span>
-                <p>A refactoring of the TestThisFor.Me into the full MERN stack. </p>
-                <br>
-                <p> Handlebars, SQL, and Sequelize were removed.
-                </p>
-                <br>
-                <p>
-                  What was added: Chrome extention with screenshot capcity and gamification with
-                  badges.</p>
-                <hr>
-                <div class="chip">MongoDB</div>
-                <div class="chip">Mongoose</div>
-                <div class="chip">React.js</div>
-                <div class="chip">Node.js</div>
-                <div class="chip">OAuth.io</div>
+          <div class="card">
+            <div class="card-content" id="cardInnardsHere">
+              <div id="projectContainerInstruct">
+               <p class="animate__animated animate__fadeInDown">click on a project on the left to see more details!</p>
               </div>
             </div>
           </div>
         </div>
-        <!-- project 4 -->
-        <div class="row">
-          <div class="col m3 s12">
-            <div class="card large sticky-action">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator responsive-img" src="./assets/images/IconsAndLogos/ttfm-logo-clr1.svg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">The Flying Mutt<i
-                    class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-action">
-                <div class="valign-wrapper">
-                  <p class="left"><a href="#" target="_blank">View Site</a></p>
-                  <p class="left"><a href="#" target="_blank">View Source</a></p>
-                </div>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">The Flying Mutt<i
-                    class="material-icons right">close</i></span>
-                <p>A refactoring of the TestThisFor.Me into the full MERN stack. </p>
-                <br>
-                <p> Handlebars, SQL, and Sequelize were removed.
-                </p>
-                <br>
-                <p>
-                  What was added: Chrome extention with screenshot capacity and gamification with
-                  badges.</p>
-                <hr>
-                <div class="chip">MongoDB</div>
-                <div class="chip">Mongoose</div>
-                <div class="chip">React.js</div>
-                <div class="chip">Node.js</div>
-                <div class="chip">OAuth.io</div>
-              </div>
-            </div>
-          </div>
-          <!-- project 5 -->
-          <div class="col m3 s12">
-            <div class="card large sticky-action">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img id="placeholderFor2020" class="activator responsive-img"
-                  src="assets\images\IconsAndLogos\placeholderIcon.png">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Event Postponed<i
-                    class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-action">
-                <div class="valign-wrapper">
-                  <p class="left"><a href="https://dallasgivecamp.org/" target="_blank">DGC Site</a></p>
-                  <p class="left">2020</p>
-                </div>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>"Due to the ongoing Covid-19 situation, there will be no GiveCamp 2020 event. We’ll continue
-                  monitoring
-                  the situation closely and look into options to hold a virtual or in-person Spring event in 2021 and/or
-                  our
-                  standard Fall event. More details to come in the following weeks/months"</p>
+      </div>
 
-              </div>
-            </div>
-          </div>
-          <!-- project6 -->
-          <div class="col m3 s12">
-            <div class="card large sticky-action">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img id="placeholderFor2020" class="activator responsive-img"
-                  src="assets\images\IconsAndLogos\placeholderIcon.png">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Event Postponed<i
-                    class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-action">
-                <div class="valign-wrapper">
-                  <p class="left"><a href="https://dallasgivecamp.org/" target="_blank">DGC Site</a></p>
-                  <p class="left">2020</p>
-                </div>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4"><i class="material-icons right">close</i></span>
-                <p>"Due to the ongoing Covid-19 situation, there will be no GiveCamp 2020 event. We’ll continue
-                  monitoring
-                  the situation closely and look into options to hold a virtual or in-person Spring event in 2021 and/or
-                  our
-                  standard Fall event. More details to come in the following weeks/months"</p>
 
-              </div>
-            </div>
-          </div>
-        </div>
+
         <div class="row">
           <h2 class="white-text">
             Dallas Give Camp - Pro Bono Hackathon
