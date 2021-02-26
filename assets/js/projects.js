@@ -1,7 +1,6 @@
 // globally instantiated variables/objects
 const classAndFreelanceProjects = {
   ttfm: {
-    id: "ttfm",
     fullTitle: "Test This For Me",
     avatarPic: "assets/images/IconsAndLogos/ttfm-logo-clr1.svg",
     shortDesc: "Group Project For Class",
@@ -11,7 +10,6 @@ const classAndFreelanceProjects = {
     deployedLink: "http://www.testthisfor.me"
   },
   yeet: {
-    id: "yeet",
     fullTitle: "Something else",
     avatarPic: "assets/images/IconsAndLogos/ttfm-logo-clr1.svg",
     shortDesc: "Group Project For Class",
@@ -27,10 +25,10 @@ const htmlProjectList = document.getElementById("dynamicProjects");
 
 
 //functions
-const makeProjectAvatars = (classAndFreelanceProjects) => {
+const makeProjectAvatars = classAndFreelanceProjects => {
   for (const prop in classAndFreelanceProjects) {
     const loopProp = classAndFreelanceProjects[prop];
-  
+
     const avatarListItem =
       `<li class="collection-item avatar" data-project="${prop}">
       <img src="${loopProp.avatarPic}" alt="test this for me logo" class="circle">
@@ -42,38 +40,29 @@ const makeProjectAvatars = (classAndFreelanceProjects) => {
   }
 };
 
-htmlProjectList.addEventListener("click", function (event) {
+htmlProjectList.addEventListener("click", event => {
   const selectedProject = event.target.closest("li");
-  for (const prop in classAndFreelanceProjects) {
-    const bigCardLoop = classAndFreelanceProjects[prop];
-    if (selectedProject.getAttribute("data-project") === classAndFreelanceProjects[prop].id) {
-      const projectCardDisplayInnards = 
-      `
-        <span class="card-title" id="projectTitle">${bigCardLoop.fullTitle}</span>
-        <p id="projectSummary">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda pariatur sapiente labore ipsa
-          dolorem illum repellendus totam nulla quod soluta commodi nostrum qui odit dolore, dolorum, sed voluptas
-          consequuntur repudiandae.
-        </p>
-        <hr>
-        <div id="chipContainer">
-          <div class="chip">MySQL</div>
-          <div class="chip">Sequelize</div>
-          <div class="chip">Handlebars.js</div>
-          <div class="chip">Materialize CSS</div>
-          <div class="chip">OAuth.io</div>
-          <div class="card-action">
-            <p class="left"><a href="http://www.testthisfor.me" target="_blank" id="viewSiteLink">View Site</a>
-            </p>
-            <p class="left"><a href="https://github.com/TyPhyter/TestThisFor.Me" target="_blank"
-                id="viewSourceLink">View Source</a>
-            </p>
-          </div>
-        </div>`
+  const bigCardProp = classAndFreelanceProjects[selectedProject.getAttribute("data-project")];
 
-    document.getElementById("cardInnardsHere").innerHTML = projectCardDisplayInnards
-    }
-  }
+  const projectCardDisplayInnards =
+    `<span class="card-title" id="projectTitle">${bigCardProp.fullTitle}</span>
+    <p>
+      ${bigCardProp.longDesc}
+    </p>
+    <hr>
+    <div>
+      ${bigCardProp.chipsArray.map(chipText => `<div class="chip">${chipText}</div>`).join("")}
+      <div class="card-action">
+        <p class="left">
+          <a href="${bigCardProp.deployedLink}" target="_blank">View Site</a>
+        </p>
+        <p class="left">
+          <a href="${bigCardProp.sourceLink}" target="_blank">View Source</a>
+        </p>
+      </div>
+    </div>`
+
+  document.getElementById("cardInnardsHere").innerHTML = projectCardDisplayInnards
 })
 
 
