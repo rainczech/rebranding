@@ -18,22 +18,23 @@ const htmlProjectList = document.getElementById("dynamicProjects");
 //functions
 const makeProjectAvatars = (classAndFreelanceProjects) => {
   for (const prop in classAndFreelanceProjects) {
-      const avatarListItem =
-        `<li class="collection-item avatar id="${prop}">
-        <img src="${classAndFreelanceProjects[prop].avatarPic}" alt="test this for me logo" class="circle">
-        <span class="title">${classAndFreelanceProjects[prop].fullTitle}</span>
-        <p>${classAndFreelanceProjects[prop].shortDesc}</p>
-        </li>`
+    const avatarListItem =
+      `<li class="collection-item avatar" data-project="${prop}">
+      <img src="${classAndFreelanceProjects[prop].avatarPic}" alt="test this for me logo" class="circle">
+      <span class="title">${classAndFreelanceProjects[prop].fullTitle}</span>
+      <p>${classAndFreelanceProjects[prop].shortDesc}</p>
+      </li>`
 
-      htmlProjectList.innerHTML+= avatarListItem;
-    }
+    htmlProjectList.innerHTML += avatarListItem;
+  }
+};
 
-  };
-
-htmlProjectList.addEventListener("click", function(event,classAndFreelanceProjects){
-  console.log(this.children[0].getAttribute('id'));
+htmlProjectList.addEventListener("click", function (event, classAndFreelanceProjects) {
+  const selectedProject = event.target;
+  console.log(selectedProject)
+  console.log(selectedProject.getAttribute("data-project"));
   for (const prop in classAndFreelanceProjects) {
-    if(this === classAndFreelanceProjects[prop]){
+    if (this === classAndFreelanceProjects[prop]) {
       console.log("you made it this far")
     }
   }
