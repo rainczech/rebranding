@@ -1,5 +1,13 @@
+:root {
+  --main-font: 'Raleway', sans-serif;
+  --secondary-font: 'Lato', sans-serif;
+  --main-color: #00264C;
+  --secondary-color: #A3ABB0;
+}
+
+
 body {
-  background-color: #00264C;
+  background-color: var(--main-color);
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -14,7 +22,7 @@ hr {
   background-color: #4D083E;
 }
 
-/* font-family: 'Montserrat', sans-serif; */
+
 label{
   padding-bottom: 10px;
   display:block;
@@ -28,7 +36,7 @@ footer {
   color: #36454F;
   margin-top: -3px;
   padding: 10px 0px;
-  background-color: #A3ABB0;
+  background-color: var(--secondary-color);
 }
 
 h2 {
@@ -49,7 +57,7 @@ ul {
 }
 
 blockquote {
-  border-left-color: #4D083E;
+  border-left-color: var(--secondary-color);
 }
 
 /* project card css */
@@ -77,21 +85,6 @@ span.card-title+p {
 }
 
 
-
-#seaTurtleLogo {
-  width: 70%;
-  height: auto;
-  margin-top: 25px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#placeholderFor2020 {
-  width: 87%;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 /* skills card css */
 .rowTitle{
