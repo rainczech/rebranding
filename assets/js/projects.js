@@ -30,7 +30,7 @@ const classAndFreelanceProjects = {
 }
 
 const htmlProjectList = document.getElementById("dynamicProjects");
-
+const projectHolder = document.getElementById("cardInnardsHere")
 
 
 //functions
@@ -39,7 +39,7 @@ const makeProjectAvatars = classAndFreelanceProjects => {
   for (const prop in classAndFreelanceProjects) {
     const loopProp = classAndFreelanceProjects[prop];
     const avatarListItem =
-      `<li class="waves-effect collection-item avatar animate__animated animate__fadeInLeft animate__delay-${intervalCounter}s" data-project="${prop}">      
+      `<li class="waves-effect waves-orange collection-item avatar animate__animated animate__fadeInLeft animate__delay-${intervalCounter}s" data-project="${prop}">      
       <img src="${loopProp.avatarPic}" alt="test this for me logo" class="circle">
       <span class="title">${loopProp.fullTitle}</span>
       <p>${loopProp.shortDesc}</p>      
@@ -56,7 +56,8 @@ htmlProjectList.addEventListener("click", event => {
   const bigCardProp = classAndFreelanceProjects[selectedProject.getAttribute("data-project")];
 
   const projectCardDisplayInnards =
-    `<span class="card-title" id="projectTitle">${bigCardProp.fullTitle}</span>
+    `<div class="card-content animate__animated animate__fadeIn">
+    <span class="card-title" id="projectTitle">${bigCardProp.fullTitle}</span>
     <p>
       ${bigCardProp.longDesc}
     </p>
@@ -71,9 +72,10 @@ htmlProjectList.addEventListener("click", event => {
           <a href="${bigCardProp.sourceLink}" target="_blank">View Source</a>
         </p>
       </div>
+    </div>
     </div>`
 
-  document.getElementById("cardInnardsHere").innerHTML = projectCardDisplayInnards
+    projectHolder.innerHTML = projectCardDisplayInnards;
 })
 
 

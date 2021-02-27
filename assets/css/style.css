@@ -215,11 +215,14 @@ i.material-icons {
   line-height: 0.7;
 }
 
+#cardInnardsHere {
+  min-height: 425px;
+}
+
 #projectContainerInstruct {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 450px;
+  position:absolute;
+  left: 25%;
+  top: 50%;
 }
 
 
