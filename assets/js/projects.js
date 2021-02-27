@@ -1,4 +1,7 @@
 // globally instantiated variables/objects
+const htmlProjectList = document.getElementById("dynamicProjects");
+const projectHolder = document.getElementById("cardInnardsHere")
+
 const classAndFreelanceProjects = {
   ttfm: {
     fullTitle: "TestThisFor.Me",
@@ -29,10 +32,6 @@ const classAndFreelanceProjects = {
   }
 }
 
-const htmlProjectList = document.getElementById("dynamicProjects");
-const projectHolder = document.getElementById("cardInnardsHere")
-
-
 //functions
 const makeProjectAvatars = classAndFreelanceProjects => {
   let intervalCounter = 0;
@@ -49,12 +48,9 @@ const makeProjectAvatars = classAndFreelanceProjects => {
   }
 };
 
-
-
 htmlProjectList.addEventListener("click", event => {
   const selectedProject = event.target.closest("li");
   const bigCardProp = classAndFreelanceProjects[selectedProject.getAttribute("data-project")];
-
   const projectCardDisplayInnards =
     `<div class="card-content animate__animated animate__fadeIn">
     <span class="card-title" id="projectTitle">${bigCardProp.fullTitle}</span>
@@ -62,7 +58,8 @@ htmlProjectList.addEventListener("click", event => {
       ${bigCardProp.longDesc}
     </p>
     <hr>
-    <div>
+    <label>Technologies Used:</label>
+    <div>    
       ${bigCardProp.chipsArray.map(chipText => `<div class="chip">${chipText}</div>`).join("")}
       <div class="card-action">
         <p class="left">
@@ -75,11 +72,8 @@ htmlProjectList.addEventListener("click", event => {
     </div>
     </div>`
 
-    projectHolder.innerHTML = projectCardDisplayInnards;
+  projectHolder.innerHTML = projectCardDisplayInnards; 
 })
-
-
-
 
 // on page load
 makeProjectAvatars(classAndFreelanceProjects);

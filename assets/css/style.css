@@ -15,6 +15,12 @@ hr {
 }
 
 /* font-family: 'Montserrat', sans-serif; */
+label{
+  padding-bottom: 10px;
+  display:block;
+  font-size: 1rem;
+}
+
 
 footer {
   text-align: center;
@@ -239,13 +245,6 @@ i.material-icons {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  #thbLogo {
-      width: 92%;
-      height: auto;
-      margin-left: auto;
-      margin-right: auto;
-  }
-
   #seaTurtleLogo {
       width: 70%;
       height: auto;
@@ -257,14 +256,6 @@ i.material-icons {
 
 
 @media only screen and (min-width: 2000px) {
-  #thbLogo {
-      width: 90%;
-      height: auto;
-      margin-top: 11%;
-      margin-left: auto;
-      margin-right: auto;
-  }
-
   #seaTurtleLogo {
       width: 81%;
       height: auto;
@@ -285,8 +276,6 @@ i.material-icons {
   .card-image {
       display: none;
   }
-
-
 
   .navLink {
       font-size: 1.25rem;
@@ -319,7 +308,6 @@ i.material-icons {
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 767px) {
-
 
   .navLink {
       font-size: 1.75rem;
