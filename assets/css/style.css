@@ -36,9 +36,11 @@ hr {
 nav {
   background-color: var(--main-color);
   border-bottom: var(--accent-color) solid 5px;
-  /* z-index: 1000; */
 }
 
+.navbar-fixed {
+  height: 75px;
+}
 
 label{
   padding-bottom: 10px;

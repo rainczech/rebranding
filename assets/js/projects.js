@@ -1,6 +1,10 @@
 // globally instantiated variables/objects
 const htmlProjectList = document.getElementById("dynamicProjects");
-const projectHolder = document.getElementById("cardInnardsHere")
+const projectHolder = document.getElementById("cardInnardsHere");
+// const navBar = document.getElementsByClassName("navbar-fixed");
+navBar = document.getElementById("switchableNavBar");
+let lastKnownScrollPosition = 0;
+
 
 const classAndFreelanceProjects = {
   ttfm: {
@@ -77,7 +81,7 @@ htmlProjectList.addEventListener("click", event => {
 
 
 // event listeners
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
   var elems = document.querySelectorAll('.fixed-action-btn');
   var instances = M.FloatingActionButton.init(elems, {
     direction: 'left',
@@ -85,13 +89,21 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', () => {
   var elems = document.querySelectorAll('.sidenav');
   var instances = M.Sidenav.init(elems);
 });
 
-
-
+document.addEventListener("scroll", () => {
+  let newScrollPosition = window.scrollY;
+  if(newScrollPosition < lastKnownScrollPosition){
+    navBar.style.top = "0";
+    lastKnownScrollPosition = newScrollPosition;      
+  } else {
+    navBar.style.top = "-100px";
+    lastKnownScrollPosition = newScrollPosition;
+  };
+});
 
 
 // on page load
