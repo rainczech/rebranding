@@ -10,37 +10,46 @@
   <!-- Compiled and minified CSS Materialize-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
 </head>
 
 <body>
-  <header>
-    <div id="headerLinksBucket">
-      <ul class="navLi">
-        <li><a class="navLink" href="aboutme.html">About Me</a></li>
-        <li><a class="navLink" href="skills.html">Skills</a></li>
-        <li><a class="navLink" href="projects.html">Projects</a></li>
-        <li><a class="navLink" href="#contactBM">Contact Me</a></li>
-      </ul>
-    </div>
-    <a href="javascript:void(0);" class="icon hamburgerIcon" onclick="hamburgerToggle()">
-      <i class="fa fa-bars"></i>
-    </a>
-  </header>
 
+  <div class="navbar-fixed">
+    <nav>
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Logo</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a class="navLink" href="aboutme.html">About Me</a></li>
+            <li><a class="navLink" href="skills.html">Skills</a></li>
+            <li><a class="navLink" href="projects.html">Projects</a></li>
+            <li><a class="navLink" href="#contactBM">Contact Me</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <ul class="sidenav" id="mobile-demo">
+    <li><a class="navLink" href="aboutme.html">About Me</a></li>
+    <li><a class="navLink" href="skills.html">Skills</a></li>
+    <li><a class="navLink" href="projects.html">Projects</a></li>
+    <li><a class="navLink" href="#contactBM">Contact Me</a></li>
+  </ul>
 
   <main>
     <div class="container">
       <div class="row">
         <h2 class="white-text">
           Class Projects and Freelance Work
-        </h2>  
+        </h2>
         <!-- container for project avatars to populate after dynamically generated-->
         <div class="col m4">
           <ul class="collection" id="dynamicProjects">
@@ -48,17 +57,43 @@
         </div>
         <!-- container for project details to populate -->
         <div class="col m8">
-          <div class="card medium" id="cardInnardsHere">            
-              <div id="projectContainerInstruct">
-               <p class="animate__animated animate__fadeIn animate__slow">click on a project on the left to see more details!</p>
+          <div class="card medium" id="cardInnardsHere">
+            <div id="projectContainerInstruct">
+              <p class="animate__animated animate__fadeIn animate__slow">click on a project on the left to see more
+                details!</p>
             </div>
           </div>
         </div>
       </div>
 
+      <div class="row">
+        <h2 class="white-text">
+          Dallas Give Camp - Pro Bono Hackathon
+        </h2>
+        <p class="white-text center-align">
+          An annual event where developers donate their time, skill, and knowledge for various charities.
+        </p>
+        <!-- container for project details to populate -->
+        <div class="col m8">
+          <div class="card medium" id="turtleCardInnardsHere">
+            <div id="projectContainerInstruct">
+              <p class="animate__animated animate__fadeIn animate__slow">click on a project on the left to see more
+                details!</p>
+            </div>
+          </div>
+        </div>
+        <!-- container for project avatars to populate after dynamically generated-->
+        <div class="col m4">
+          <ul class="collection" id="dynamicTurtleProjects">
+          </ul>
+        </div>
+      </div>
 
 
-        <div class="row">
+
+
+
+      <!-- <div class="row">
           <h2 class="white-text">
             Dallas Give Camp - Pro Bono Hackathon
           </h2>
@@ -67,8 +102,8 @@
           </p>
         </div>
         <div class="row flex">
-          <!--  DGC 2018 -->
-          <!-- <div class="col m4 s12">
+           DGC 2018
+          <div class="col m4 s12">
             <div class="card sticky-action">
               <div class="card-image waves-effect waves-block waves-light">
                 <img id="seaTurtleLogo" class="activator responsive-img"
@@ -99,8 +134,8 @@
               </div>
             </div>
           </div> -->
-          <!-- DGC 2019 -->
-          <!-- <div class="col m4 s12">
+      <!-- DGC 2019 -->
+      <!-- <div class="col m4 s12">
             <div class="card sticky-action">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator responsive-img" src="assets\images\IconsAndLogos\TourDeTurtles.PNG">
@@ -130,11 +165,11 @@
                 <div class="chip">CSS</div>
               </div>
             </div>
-          </div> -->
+          </div>
           
 
         </div>
-      </div>
+      </div>-->
   </main>
 
   <footer> © Grace Ho 2018-2020 </footer>

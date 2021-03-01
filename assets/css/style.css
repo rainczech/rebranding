@@ -1,10 +1,20 @@
 :root {
   --main-font: 'Raleway', sans-serif;
-  --secondary-font: 'Lato', sans-serif;
+  --secondary-font: 'Merriweather', serif;
   --main-color: #00264C;
   --secondary-color: #A3ABB0;
-}
+  --tertiary-color: #00407F;
+  --accent-color: #69124A;
+;}
 
+/* pewter: #D4D0D0
+grey: #A3ABB0
+charcoal: #36454F
+ */
+/* Maroon #69124A
+Dark BLue #080B39
+Midnight Blue 14527C
+pink #F248B6 */
 
 body {
   background-color: var(--main-color);
@@ -13,13 +23,20 @@ body {
   flex-direction: column;
 }
 
+/* for sticky footer remove and add top margin for content if  */
 main {
   flex: 1 0 auto;
 }
 
 
 hr {
-  background-color: #4D083E;
+  background-color: var(--accent-color);
+}
+
+nav {
+  background-color: var(--main-color);
+  border-bottom: var(--accent-color) solid 5px;
+  /* z-index: 1000; */
 }
 
 
@@ -32,15 +49,15 @@ label{
 
 footer {
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
-  color: #36454F;
+  font-family: var(--secondary-font);
+  color: var( --tertiary-color);
   margin-top: -3px;
   padding: 10px 0px;
   background-color: var(--secondary-color);
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--secondary-font);
   font-size: 2rem;
   text-align: center;
 }
@@ -84,7 +101,10 @@ span.card-title+p {
   padding-left: 7%;
 }
 
-
+/* TODO: style sidenav */
+.sidenav {
+  background-color: white;
+}
 
 /* skills card css */
 .rowTitle{
@@ -106,22 +126,20 @@ ul.navLi li {
 
 
 .navLink {
-  color: white;
+  color: var(--secondary-color);
   font-size: 1.25rem;
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--main-font);
 }
 
-#headerLinksBucket {
-  /* the navy */
-  /* background-color:#00264C; */
-  /* background-color: #4D083E;  */
-  background-color: #36454F;
+/* TODO create a proper NAV*/
+/* #headerLinksBucket {
+  background-color: var(--primary-color);
   padding: 20px 0px;
   top: 0;
   width: 100%;
-  border-bottom: #A3ABB0 solid 5px;
+  border-bottom: var(--accent-color) solid 5px;
   z-index: 1000;
-}
+} */
 
 .notSoBig {
   width: 25%;
@@ -133,7 +151,7 @@ ul.navLi li {
 }
 
 
-.collection {
+.collection, .card{
   border: none;
 }
 
@@ -154,15 +172,6 @@ ul.navLi li {
 .avatar {
   display: block;
 }
-
-.card {
-  border: none;
-}
-
-.card-text {
-  font-family: 'Raleway', sans-serif;
-}
-
 
 
 .view {
