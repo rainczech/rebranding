@@ -133,16 +133,6 @@ ul.navLi li {
   font-family: var(--main-font);
 }
 
-/* TODO create a proper NAV*/
-/* #headerLinksBucket {
-  background-color: var(--primary-color);
-  padding: 20px 0px;
-  top: 0;
-  width: 100%;
-  border-bottom: var(--accent-color) solid 5px;
-  z-index: 1000;
-} */
-
 .notSoBig {
   width: 25%;
 }

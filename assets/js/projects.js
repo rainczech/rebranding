@@ -1,7 +1,8 @@
 // globally instantiated variables/objects
 const htmlProjectList = document.getElementById("dynamicProjects");
 const projectHolder = document.getElementById("cardInnardsHere");
-// const navBar = document.getElementsByClassName("navbar-fixed");
+const DGCProjectsList = document.getElementById("DGCProjects");
+const DGCProjectCardHolder = document.getElementById("turtleCardInnardsHere");
 navBar = document.getElementById("switchableNavBar");
 let lastKnownScrollPosition = 0;
 
@@ -33,6 +34,27 @@ const classAndFreelanceProjects = {
     chipsArray: ["MongoDB", "Mongoose", "Node.js", "OAuth.io", "React.js"],
     sourceLink: "https://github.com/rainczech/ttfm-mern",
     deployedLink: "http://www.testthisfor.me"
+  }
+}
+
+const dallasGiveCampProjects ={
+  dgcbtp: {
+    fullTitle: "The Bermuda Turtle Project",
+    avatarPic: "./assets/images/IconsAndLogos/BTP_icon.jpg",
+    shortDesc: "Sea Turtle Conservancy 2018",
+    longDesc: "Updated the entire site for the Bermuda Turtle Part, part of the Sea Turtle Conservancy. The design, structure, and placement was all redone by myself.<br><br>WordPress was used so non-developers can update the information as necessary independently.",
+    chipsArray: ["HTML", "CSS", "WordPress"],
+    sourceLink: "https://dallasgivecamp.org/",
+    deployedLink: "http://bermudaturtleproject.org/"
+  },
+  dgctdt: {
+    fullTitle: "Tour De Turtles",
+    avatarPic: ".assets\images\IconsAndLogos\TourDeTurtles.PNG",
+    shortDesc: "Sea Turtle Conservancy 2018",
+    longDesc: "Updated the site for the Tour De Turtles, part of the Sea Turtle Conservancy. I was responsible for the layout and transferring of content from the older site to this new one.<br><br>WordPress was used so non-developers can update the information as necessary independently.",
+    chipsArray: ["HTML", "CSS", "WordPress"],
+    sourceLink: "https://dallasgivecamp.org/",
+    deployedLink: "https://tourdeturtles.org/"
   }
 }
 
@@ -79,6 +101,29 @@ htmlProjectList.addEventListener("click", event => {
   projectHolder.innerHTML = projectCardDisplayInnards; 
 })
 
+DGCProjectsList.addEventListener("click", event => {
+  const selectedDGCProject = event.target.closest("li");
+  const bigDGCProp = objdallasGiveCampProjectsect[selectedDGCProject.getAttribute("data-project")];
+  const DGCCardDisplayInnard = 
+    `<div class="card-content animate__animated animate__fadeIn">
+    <span class="card-title" id="projectTitle">${bigDGCProp.fullTitle}</span>
+    <p>
+      ${bigDGCProp.longDesc}
+    </p>
+    <hr>
+    <label>Technologies Used:</label>
+    <div>    
+      ${bigDGCProp.chipsArray.map(chipText => `<div class="chip">${chipText}</div>`).join("")}
+      <div class="card-action">
+        <p class="left">
+          <a href="${bigDGCProp.deployedLink}" target="_blank">View Site</a>
+        </p>
+        <p class="left">
+          <a href="${bigDGCProp.sourceLink}" target="_blank">Dallas Give Camp Site</a>
+        </p>
+      </div>
+    </div>
+    </div>`
 
 // event listeners
 document.addEventListener('DOMContentLoaded', () => {
