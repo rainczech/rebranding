@@ -61,10 +61,9 @@ footer {
   text-align: center;
   font-family: var(--secondary-font);
   color: var( --tertiary-color);
-  margin-top: -3px;
   padding: 10px 0px;
   background-color: var(--secondary-color);
-  border-top: var(--main-color) solid 2px;
+  border-top: var(--accent-color) solid 2px;
 }
 
 h2 {
