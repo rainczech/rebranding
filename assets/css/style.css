@@ -34,6 +34,7 @@ main {
 
 hr {
   background-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
 nav {
@@ -68,9 +69,7 @@ h2 {
   text-align: center;
 }
 
-h3{
-  font-size:1.5rem;
-}
+
 
 p {
   font-family: var(--main-font);
@@ -78,10 +77,7 @@ p {
   line-height: 1.4rem;
 }
 
-ul, h3 {
-  text-align: center;
-  font-family: var(--main-font);
-}
+
 
 blockquote {
   border-left-color: var(--secondary-color);
@@ -138,31 +134,6 @@ img.navLogo {
   margin-bottom: 12px;
 }
 
-
-.collection , .card{
-  border: none;
-}
-
-.card, .collection .collection-item {
-  background: #fafafa;
-}
-
-.name {
-  display: block;
-}
-/* 
-.navbar-toggler {
-  border: none;
-  text-align: right;
-} */
-
-/* .navbar-toggler-icon {
-  color: rebeccapurple;
-} */
-
-.avatar {
-  display: block;
-}
 
 
 .view {
