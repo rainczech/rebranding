@@ -11,9 +11,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway:wght@400;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
   <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="assets\css\index.css">
 </head>
 
 <body>
@@ -22,7 +24,8 @@
       <div class="container">
         <div class="nav-wrapper">
           <a href="index.html"><img class="navLogo" src="assets\images\PersonalLogo .png"></a>
-          <a href="#" data-target="mobileNavBar" class="sidenav-trigger right"><i class="material-icons" id="hamburgerTrigger">menu</i></a>
+          <a href="#" data-target="mobileNavBar" class="sidenav-trigger right"><i class="material-icons"
+              id="hamburgerTrigger">menu</i></a>
           <ul class="right hide-on-med-and-down">
             <li><a class="navLink" href="aboutme.html">About Me</a></li>
             <li><a class="navLink" href="skills.html">Skills</a></li>
@@ -40,25 +43,42 @@
     <li><a class="navLink" href="#contactBM">Contact Me</a></li>
   </ul>
 
-  <main>
+  <main> 
+    <div class="row banner flex">
+      <div class="col m6 vertAlign">
+        <div class="card" id="landingcard">
+          <P>CONTENT</P>
+        </div>
+      </div>
+      <div class="col m6 vertAlign">
+        <div>
+        <img class="responsive-img col m5 offset-m1 noGutter" src="assets\images\squareHeroImage.png" alt="">
+        <img src="assets\images\squareHero3.png" alt="" class="responsive-img col m5 noGutter">
+        <img class="responsive-img col m5 noGutter offset-m1" src="assets\images\squareHero4.png" alt="">
+        <img class="responsive-img col m5 noGutter" src="assets\images\squareHero2.png" alt="">
+      </div>
+    </div>
+  </div>
+    
     <!-- hero banner -->
-    <img class="banner" src="assets\images\WebsiteBannerAlt.png" alt="">
+    <!-- <img class="banner" src="assets\images\WebsiteBannerAlt.png" alt=""> -->
   </main>
 
 
 
-  <footer> © Grace Ho 2018-2020 </footer>
+  <footer> © Grace Ho 2018-2021 </footer>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="assets\js\script.js"></script>
 </body>
 
 </html>
 
-<br><br>
+<!-- <br><br> -->
 <!-- beginning of main -->
-<div class="container">
+<!-- <div class="container">
   <div class="row">
     <div class="card horizontal">
       <div class="card-image notSoBig">
@@ -86,16 +106,16 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Contact Me -->
 
 
-  <div class="card horizontal"><a id="contactBM" class="offset"></a>
+  <!-- <div class="card horizontal"><a id="contactBM" class="offset"></a> -->
     <!-- <div class="card-image">
         <img src="https://lorempixel.com/100/190/nature/6">
       </div> -->
-    <div class="card-stacked">
+    <!-- <div class="card-stacked">
       <div class="card-content">
         <h2>Say Hello!</h2>
       </div>
@@ -128,13 +148,13 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
 
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <!-- <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br> -->
 
 
-</div>
+<!-- </div>
 <div class="row">
   <div class="card">
     <div class="card-header" id="contactTitle">
@@ -147,65 +167,31 @@
 
 
 
-  <div class="row">
+  <div class="row"> -->
     <!-- linkedin -->
 
     <!-- github -->
 
     <!-- email -->
 
-  </div>
+  <!-- </div> -->
 
 
 
-  <hr>
+  <!-- <hr> -->
   <!-- Skills -->
-  <div class="row"> <a id="skillsBM" class="offset"></a>
-    <div class="card">
-      <div class="card-header" id="skillsTitle">
-        Skills
-      </div>
-      <div class="card-body">
-        <div class="row">
-          <h2 class="card-text">I have experience with highly sought after technologies including:</h2>
-          <ul class="col-md-4">
-            <li>JavaScript</li>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>Bootstrap</li>
-            <li>Materialize</li>
-          </ul>
-          <ul class="col-md-4">
-            <li>Express</li>
-            <li>MySQL</li>
-            <li>Handlebars</li>
-            <li>Sequelize</li>
-            <li>Heroku</li>
-          </ul>
-          <ul class="col-md-4">
-            <li>Node</li>
-            <li>React</li>
-            <li>Git</li>
-            <li>JQuery</li>
-            <li>MongoDB</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <hr>
   <!-- Projects -->
-  <div class="row offset"> <a id="projectsBM" class="offset"></a>
+  <!-- <div class="row offset"> <a id="projectsBM" class="offset"></a>
     <div class="card">
       <div class="card-header">
         Featured Projects
       </div>
       <div class="card-body">
-        <div class="row">
+        <div class="row"> -->
           <!-- TestThisFor.Me -->
 
           <!-- fourth project -->
-          <div class="card col-lg-4 col-md-6 col-sm-12">
+          <!-- <div class="card col-lg-4 col-md-6 col-sm-12">
             <img class="card-header projectHead" src="./assets/images/api_giphy_logo-1200x630-c-ar1.91.png"
               width="150px" height="175px" />
             <div class="card-body projectBody">
@@ -226,7 +212,7 @@
   <hr>
 
 </div>
-</div>
+</div> -->
 
 
 <!-- bootstrap js -->

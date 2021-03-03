@@ -3,7 +3,7 @@
   --secondary-font: 'Merriweather', serif;
   --main-color: #00264C;
   --secondary-color: #A3ABB0;
-  --tertiary-color: #00407F;
+  --tertiary-color: #69124A;
   --accent-color: #ffab40;
 ;}
 
@@ -42,7 +42,7 @@ nav {
 }
 
 .navbar-fixed {
-  height: 75px;
+  height: 64px;
 }
 
 label{
@@ -59,6 +59,7 @@ footer {
   margin-top: -3px;
   padding: 10px 0px;
   background-color: var(--secondary-color);
+  border-top: var(--main-color) solid 2px;
 }
 
 h2 {
@@ -86,13 +87,6 @@ blockquote {
   border-left-color: var(--secondary-color);
 }
 
-
-/* project card css */
-/* guess who learned adjacent? */
-span.card-title+p {
-  margin-top: 15px;
-}
-
 .vertAlign {
  align-items: center;
  justify-content: center;
@@ -104,22 +98,7 @@ span.card-title+p {
   flex-wrap: wrap;
 }
 
-/* .card-title {
-  font-family: var(--main-font);
-}
 
-.card-action {
-  padding-bottom: 30px;
-} */
-
-
-
-
-/* .DGCpadding {
-  padding-left: 7%;
-} */
-
-/* TODO: style sidenav */
 ul#mobileNavBar.sidenav, .sidenav li>a {
   background-color:var(--secondary-color);
 }
@@ -141,11 +120,7 @@ img.navLogo {
 }
 
 
-.banner {
-  width: 100%;
-  height: auto;
-  margin-top: 63px;
-}
+
 
 /* full page nav bar */
 .navLink {
