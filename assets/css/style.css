@@ -104,24 +104,24 @@ span.card-title+p {
   flex-wrap: wrap;
 }
 
-.card-title {
+/* .card-title {
   font-family: var(--main-font);
 }
 
 .card-action {
   padding-bottom: 30px;
-}
+} */
 
 
 
 
-.DGCpadding {
+/* .DGCpadding {
   padding-left: 7%;
-}
+} */
 
 /* TODO: style sidenav */
-.sidenav {
-  background-color: white;
+ul#mobileNavBar.sidenav, .sidenav li>a {
+  background-color:var(--secondary-color);
 }
 
 /* skills card css */
@@ -136,13 +136,18 @@ ul.navLi li {
   padding-left: 16px;
 }
 
+img.navLogo {
+  height: 60px;
+}
+
+
 .banner {
   width: 100%;
   height: auto;
   margin-top: 63px;
 }
 
-
+/* full page nav bar */
 .navLink {
   color: var(--secondary-color);
   font-size: 1.25rem;
@@ -159,23 +164,26 @@ ul.navLi li {
 }
 
 
-.collection, .card{
+.collection , .card{
   border: none;
 }
 
+.card, .collection .collection-item, .collection{
+  background: #fafafa;
+}
 
 .name {
   display: block;
 }
-
+/* 
 .navbar-toggler {
   border: none;
   text-align: right;
-}
+} */
 
-.navbar-toggler-icon {
+/* .navbar-toggler-icon {
   color: rebeccapurple;
-}
+} */
 
 .avatar {
   display: block;
@@ -200,7 +208,7 @@ ul.navLi li {
   text-align: left;
 }
 
-.material-icons {
+/* .material-icons {
   font-size: 20px;
   color: black;
   line-height: 0.7;
@@ -212,7 +220,13 @@ i.material-icons {
 
 .hamburgerIcon {
   display: none;
+} */
+
+
+#hamburgerTrigger{
+  color: var(--secondary-color);
 }
+
 
 #skillsTitle {
   text-align: left;
