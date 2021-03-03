@@ -1,37 +1,36 @@
 h1 {
-    font-family: var(--secondary-font);
-    font-size: 5rem;
+  font-family: var(--secondary-font);
+  font-size: 5rem;
 }
 
 h4 {
-    font-family: var(--main-font);
-    color: var(--secondary-color)
+  font-family: var(--main-font);
+  color: var(--secondary-color)
 }
 
 
 img.responsive-img.col.m5.noGutter {
-    padding:0;
-  }
+  padding: 0;
+}
 
 
-  div.row.banner.flex {
-      margin-bottom: 0;
-      height: 100%;
-      /* padding: 20px 0px; */
-  }
-  
+div.row.banner.flex {
+  margin-bottom: 0;
+  height: 100%;
+}
+
 .banner {
-background-color: var(--secondary-color);
+  background-color: var(--secondary-color);
 }
 
-#landingcard{
-    background-color: var(--main-color);
-    color: white;
-    left: 15%;
-    width: 100%;
-    height: 80%;
+#landingcard {
+  background-color: var(--main-color);
+  color: white;
+  left: 15%;
+  width: 100%;
+  height: 80%;
 }
 
-.card-content{
-   margin-top: 15%;
+.card-content {
+  margin-top: 15%;
 }

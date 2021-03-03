@@ -7,6 +7,10 @@
   --accent-color: #ffab40;
 ;}
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ffab40
 orange accent-2 */
 

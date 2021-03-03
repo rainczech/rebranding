@@ -1,22 +1,24 @@
+.collection,
+.card {
+  border: none;
+}
 
-.collection , .card{
-    border: none;
-  }
-  
-  .card, .collection .collection-item {
-    background: #fafafa;
-  }
-  
-  
-  .avatar {
-    display: block;
-  }
+.card,
+.collection .collection-item {
+  background: #fafafa;
+}
 
-  h3{
-    font-size:1.5rem;
-  }
-  
-  ul, h3 {
-    text-align: center;
-    font-family: var(--main-font);
-  }
+
+.avatar {
+  display: block;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+ul,
+h3 {
+  text-align: center;
+  font-family: var(--main-font);
+}
