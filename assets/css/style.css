@@ -44,14 +44,7 @@ hr {
   color: var(--accent-color);
 }
 
-nav {
-  background-color: var(--main-color);
-  border-bottom: var(--accent-color) solid 3px;
-}
 
-.navbar-fixed {
-  height: 64px;
-}
 
 label{
   padding-bottom: 10px;
@@ -105,15 +98,9 @@ ul#mobileNavBar.sidenav, .sidenav li>a {
   background-color:var(--secondary-color);
 }
 
-/* skills card css */
-.rowTitle{
-  padding-top: 10px;
-}
 
 
-img.navLogo {
-  height: 60px;
-}
+
 
 .card {
   border: none;
@@ -122,11 +109,36 @@ img.navLogo {
 
 
 /* full page nav bar */
+nav {
+  background-color: var(--main-color);
+  border-bottom: var(--accent-color) solid 3px;
+}
+
+.navbar-fixed {
+  height: 64px;
+}
+
 .navLink {
   color: var(--secondary-color);
   font-size: 1.25rem;
   font-family: var(--main-font);
 }
+
+img.navLogo {
+  height: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 .socialMediaicon {
   margin-bottom: 12px;
@@ -134,15 +146,8 @@ img.navLogo {
 
 
 
-.view {
-  text-align: center;
-}
 
-.vlleft {
-  padding-left: 10px;
-  height: 100%;
-  border-left: solid 1px #A3ABB0 ;
-}
+
 
 .center {
   text-align: center;
