@@ -4,8 +4,11 @@
   --main-color: #00264C;
   --secondary-color: #A3ABB0;
   --tertiary-color: #00407F;
-  --accent-color: #69124A;
+  --accent-color: #ffab40;
 ;}
+
+/* ffab40
+orange accent-2 */
 
 /* pewter: #D4D0D0
 grey: #A3ABB0
@@ -35,7 +38,7 @@ hr {
 
 nav {
   background-color: var(--main-color);
-  border-bottom: var(--accent-color) solid 5px;
+  border-bottom: var(--accent-color) solid 3px;
 }
 
 .navbar-fixed {
@@ -64,25 +67,36 @@ h2 {
   text-align: center;
 }
 
+h3{
+  font-size:1.5rem;
+}
+
 p {
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--main-font);
   font-size: 1.25rem;
   line-height: 1.4rem;
 }
 
-ul {
+ul, h3 {
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  font-family: var(--main-font);
 }
 
 blockquote {
   border-left-color: var(--secondary-color);
 }
 
+
 /* project card css */
 /* guess who learned adjacent? */
 span.card-title+p {
   margin-top: 15px;
+}
+
+.vertAlign {
+ align-items: center;
+ justify-content: center;
+ display: flex;
 }
 
 .flex {
@@ -91,12 +105,14 @@ span.card-title+p {
 }
 
 .card-title {
-  font-family: 'Montserrat', sans-serif;
+  font-family: var(--main-font);
 }
 
 .card-action {
   padding-bottom: 30px;
 }
+
+
 
 
 .DGCpadding {
@@ -215,15 +231,6 @@ i.material-icons {
   line-height: 0.7;
 }
 
-#cardInnardsHere {
-  min-height: 425px;
-}
-
-#projectContainerInstruct {
-  position:absolute;
-  left: 25%;
-  top: 50%;
-}
 
 
 

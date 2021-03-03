@@ -10,9 +10,6 @@
   <!-- Compiled and minified CSS Materialize-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
-  <!-- <link rel="preconnect" href="https://fonts.gstatic.com"> -->
   <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
@@ -20,7 +17,6 @@
 </head>
 
 <body>
-
   <div class="navbar-fixed" id="switchableNavBar">
     <nav>
       <div class="container">
@@ -30,7 +26,7 @@
           <ul class="right hide-on-med-and-down">
             <li><a class="navLink" href="aboutme.html">About Me</a></li>
             <li><a class="navLink" href="skills.html">Skills</a></li>
-            <li><a class="navLink" href="projects.html">Projects</a></li>
+            <li><a class="navLink" href="projects.html">Coding Projects</a></li>
             <li><a class="navLink" href="#contactBM">Contact Me</a></li>
           </ul>
         </div>
@@ -50,6 +46,8 @@
         <h2 class="white-text">
           Class Projects and Freelance Work
         </h2>
+      </div>
+      <div class="row">        
         <!-- container for project avatars to populate after dynamically generated-->
         <div class="col m4">
           <ul class="collection" id="dynamicProjects">
@@ -58,10 +56,9 @@
         <!-- container for project details to populate -->
         <div class="col m8">
           <div class="card medium" id="cardInnardsHere">
-            <div id="projectContainerInstruct">
-              <p class="animate__animated animate__fadeIn animate__slow">click on a project on the left to see more
+            <p class="animate__animated animate__fadeIn animate__slow card-content center-align">click on a project on the left to see more
                 details!</p>
-            </div>
+           
           </div>
         </div>
       </div>
@@ -71,116 +68,67 @@
           Dallas Give Camp - Pro Bono Hackathon
         </h2>
         <p class="white-text center-align">
-          An annual event where developers donate their time, skill, and knowledge for various charities.
+          An annual (COVID willing) event where developers donate their time, skill, and knowledge for various charities.
         </p>
-        <!-- container for project details to populate -->
-        <div class="col m8">
-          <div class="card medium" id="turtleCardInnardsHere">
-            <!-- <div id="projectContainerInstruct">
-              <p class="animate__animated animate__fadeIn animate__slow">click on a project on the left to see more
-                details!</p>
-            </div> -->
+      </div>
+      <!-- Tour De Turtles Row -->
+      <div class="row flex">
+          <div class="col m7">
+            <div class="video-container">
+            <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fgrace.ho.946517%2Fposts%2F10157678057473233&width=500&show_text=true&height=504&appId" width="500" height="504" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
           </div>
         </div>
-        <!-- container for project avatars to populate after dynamically generated-->
-        <div class="col m4">
-          <ul class="collection" id="DGCProjects">
-            <li class="waves-effect waves-orange collection-item avatar" data-project="DGCBTP">      
-              <img src="./assets/images/IconsAndLogos/BTP_icon.jpg" alt="Bermuda Turtle Project Logo" class="circle">
-              <span class="title">Dallas Give Camp</span>
-              <p>Sea Turtle Conservancy 2018</p>
-            </li>
-            <li class="waves-effect waves-orange collection-item avatar" data-project="DGCTDT">      
-              <img src="assets\images\IconsAndLogos\TourDeTurtles.PNG" alt="test this for me logo" class="circle">
-              <span class="title">Dallas Give Camp</span>
-              <p>Sea Turtle Conservancy 2019</p>
-            </li>
-              
-          </ul>
-        </div>
-      </div>
-
-
-
-
-
-      <!-- <div class="row">
-          <h2 class="white-text">
-            Dallas Give Camp - Pro Bono Hackathon
-          </h2>
-          <p class="white-text center-align">
-            An annual event where developers donate their time, skill, and knowledge for various charities.
+        <div class="col offset-m1 m3 vertAlign">
+          <p class="orange-text text-accent-2">
+           It is easy to underestimate the impact one can have as a developer to solve problems, encourage the sharing of information, and to make the world just a little bit better.<br><br>
+            Imagine my surprise when Kermit and Miss Piggy promoted a charity in 2020 that I've supported through Dallas Give Camp by reworking their website over the past 2 years!
           </p>
         </div>
-        <div class="row flex">
-           DGC 2018
-          <div class="col m4 s12">
-            <div class="card sticky-action">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img id="seaTurtleLogo" class="activator responsive-img"
-                  src="./assets/images/IconsAndLogos/BTP_icon.jpg">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Bermuda Turtle Project<i
-                    class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-action">
-                <div class="valign-wrapper">
-                  <p class="left"><a href="http://bermudaturtleproject.org/" target="_blank">View Site</a></p>
-                  <p class="left">2018</p>
-                  <p class="DGCpadding"><a href="https://dallasgivecamp.org/" target="_blank">DGC SITE</a></p>
-                </div>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Bermuda Turtle Project<i
-                    class="material-icons right">close</i></span>
-                <p>Updated the entire site for the Bermuda Turtle Part, part of the Sea Turtle Conservancy. The design,
-                  structure, and placement was all redone by myself.</p>
-                <br>
-                <p>WordPress was used so non-developers can update the information as necessary independently.</p>
-                <hr>
-                <div class="chip">WordPress</div>
+        <div class="col m1"></div>
+      </div>
+      <!-- Dallas Give Camp Information -->
+      <div class="row">
+          <div class="card col m12 small">
+            <div class="col m9 card-content">
+              <span class="card-title">Dallas Give Camp Summary</span>
+              <p>I updated the websites for the Bermuda Turtle Project and Tour De Turtles, part of the Sea Turtle Conservancy. The design, structure, layout, and transferring of content from the older site was done mostly by myself.</p>
+              <br>
+              <p>WordPress was used so non-developers can update the information as necessary independently.</p>
+              <hr>
+              <label>Technologies Used:</label>
+              <div class="chip">WordPress</div>
                 <div class="chip">HTML</div>
                 <div class="chip">CSS</div>
-              </div>
+            </div>      
+            <div class="col m3 card-content">
+              <span class="card-title">Years Participated</span>
+              <ul class="collection">
+                <li class="waves-effect waves-orange collection-item avatar">      
+                  <img src="./assets/images/IconsAndLogos/BTP_icon.jpg" alt="Bermuda Turtle Project Logo" class="circle">
+                  <span class="title">Bermuda Turtle Project</span>
+                  <p>Sea Turtle Conservancy 2018</p>
+                </li>
+                <li class="waves-effect waves-orange collection-item avatar">      
+                  <img src="assets\images\IconsAndLogos\TourDeTurtles.PNG" alt="test this for me logo" class="circle">
+                  <span class="title">Tour De Turtles</span>
+                  <p>Sea Turtle Conservancy 2019</p>
+                </li>
+              </ul>
             </div>
-          </div> -->
-      <!-- DGC 2019 -->
-      <!-- <div class="col m4 s12">
-            <div class="card sticky-action">
-              <div class="card-image waves-effect waves-block waves-light">
-                <img class="activator responsive-img" src="assets\images\IconsAndLogos\TourDeTurtles.PNG">
-              </div>
-              <div class="card-content">
-                <span class="card-title activator grey-text text-darken-4">Tour De Turtles<i
-                    class="material-icons right">more_vert</i></span>
-              </div>
-              <div class="card-action">
-                <div class="valign-wrapper">
-                  <p class="left"><a href="https://tourdeturtles.org/" target="_blank">View Site</a></p>
-                  <p class="left">2019</p>
-                  <p class="DGCpadding"><a href="https://dallasgivecamp.org/" target="_blank">DGC SITE</a></p>
-                </div>
-              </div>
-              <div class="card-reveal">
-                <span class="card-title grey-text text-darken-4">Tour De Turtles 2019<i
-                    class="material-icons right">close</i></span>
-                <p>Udated the site for the Tour De Turtles, part of the Sea Turtle Conservancy. I was responsible for
-                  the
-                  layout and transferring of content from the older site to this new one.</p>
-                <br>
-                <p>WordPress was used so non-developers can update the information as necessary independently.</p>
-                <hr>
-                <div class="chip">WordPress</div>
-                <div class="chip">HTML</div>
-                <div class="chip">CSS</div>
-              </div>
+            <div class="card-action">
+              <p class="left col m4">
+                <a href="https://dallasgivecamp.org/" target="_blank">Dallas Give Camp Site</a>
+              </p>
+              <p class="left col m4">
+                <a href="https://tourdeturtles.org/" target="_blank">Tour De Turtles Site</a>
+              </p>
+              <p class="left col m4">
+                <a href="http://bermudaturtleproject.org/" target="_blank">Bermuda Turtle Project Site</a>
+              </p>
             </div>
           </div>
-          
-
         </div>
-      </div>-->
+
   </main>
 
   <footer> © Grace Ho 2018-2020 </footer>
@@ -189,8 +137,6 @@
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-  <!-- <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script> -->
-  <!-- <script src="assets/js/jQuery35.js"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
   </script>
