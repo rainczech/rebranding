@@ -1,47 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Grace Ho</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="./assets/reset.css" />
-  <!-- Compiled and minified CSS Materialize-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-    integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-  <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Raleway" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" media="screen" href="./assets/style.css" />
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Grace Ho</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
+    <!-- Compiled and minified CSS Materialize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="assets\css\skills.css">
+  </head>
 
-<body>
-  <header>
-    <div id="headerLinksBucket">
-      <ul class="navLi">
-        <li><a class="navLink" href="aboutme.html">About Me</a></li>
-        <li><a class="navLink" href="skills.html">Skills</a></li>
-        <li><a class="navLink" href="projects.html">Projects</a></li>
-        <li><a class="navLink" href="#contactBM">Contact Me</a></li>
-      </ul>
-  </div>
-  <a href="javascript:void(0);" class="icon hamburgerIcon" onclick="hamburgerToggle()">
-   <i class="fa fa-bars"></i>
-  </a>
-  </header>
-
-  <div class="container">
-    <h2 class="white-text">
-      Skills
-    </h2>
-    <div class="row">
-      <div class="card horizontal">
-        <div class="card-image responsive-img" style="width:19%;">
-          <img src="assets\images\skillsCardSide.png">
+  <body>
+    <div class="navbar-fixed" id="switchableNavBar">
+      <nav>
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="index.html"><img class="navLogo" src="assets\images\PersonalLogo .png"></a>
+            <a href="#" data-target="mobileNavBar" class="sidenav-trigger right"><i class="material-icons"
+                id="hamburgerTrigger">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+              <li><a class="navLink" href="#aboutMe">About Me</a></li>
+              <li><a class="navLink" href="skills.html">Skills</a></li>
+              <li><a class="navLink" href="projects.html">Coding Projects</a></li>
+              <li><a class="navLink" href="#contactBM">Contact Me</a></li>
+            </ul>
+          </div>
         </div>
-        <div class="card-stacked">
+      </nav>
+    </div>
+    <ul class="sidenav" id="mobileNavBar">
+      <li><a class="navLink" href="index.html#aboutMe">About Me</a></li>
+      <li><a class="navLink" href="skills.html">Skills</a></li>
+      <li><a class="navLink" href="projects.html">Projects</a></li>
+      <li><a class="navLink" href="#contactBM">Contact Me</a></li>
+    </ul>
+<main>
+  <!-- <div class="container"> -->
+    
+    <div class="row">
+      <div class="col m3 offset-m1">
+        <h2>Certifications</h2>
+        <div class="card">
+          <div class="card-content">
+            <p class=center-align>Coming Soon</p>
+          </div>
+        </div>
+
+      </div>
+      <div class="col m7">
+        <h2>Skills</h2>
+      <div class="card">
           <div class="card-content">
             <div class="row">
               <p class="col s12">Back End Technology</p>
@@ -121,8 +137,16 @@
           </div>
         </div>
       </div>
+      <div class="col m1"></div>
     </div>
-  </div>
+  <!-- </div> -->
+</main>
+  <footer> © Grace Ho 2018-2021 </footer>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<script src="assets\js\script.js"></script>
 </body>
 
 </html>

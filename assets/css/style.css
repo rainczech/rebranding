@@ -3,9 +3,13 @@
   --secondary-font: 'Merriweather', serif;
   --main-color: #00264C;
   --secondary-color: #A3ABB0;
-  --tertiary-color: #00407F;
+  --tertiary-color: #69124A;
   --accent-color: #ffab40;
 ;}
+
+html {
+  scroll-behavior: smooth;
+}
 
 /* ffab40
 orange accent-2 */
@@ -31,19 +35,16 @@ main {
   flex: 1 0 auto;
 }
 
+h2 {
+  color: var(--accent-color);
+}
 
 hr {
   background-color: var(--accent-color);
+  color: var(--accent-color);
 }
 
-nav {
-  background-color: var(--main-color);
-  border-bottom: var(--accent-color) solid 3px;
-}
 
-.navbar-fixed {
-  height: 75px;
-}
 
 label{
   padding-bottom: 10px;
@@ -55,10 +56,10 @@ label{
 footer {
   text-align: center;
   font-family: var(--secondary-font);
-  color: var( --tertiary-color);
-  margin-top: -3px;
+  color: #36454F;
   padding: 10px 0px;
   background-color: var(--secondary-color);
+  border-top: var(--accent-color) solid 2px;
 }
 
 h2 {
@@ -67,9 +68,7 @@ h2 {
   text-align: center;
 }
 
-h3{
-  font-size:1.5rem;
-}
+
 
 p {
   font-family: var(--main-font);
@@ -77,20 +76,10 @@ p {
   line-height: 1.4rem;
 }
 
-ul, h3 {
-  text-align: center;
-  font-family: var(--main-font);
-}
+
 
 blockquote {
   border-left-color: var(--secondary-color);
-}
-
-
-/* project card css */
-/* guess who learned adjacent? */
-span.card-title+p {
-  margin-top: 15px;
 }
 
 .vertAlign {
@@ -104,44 +93,30 @@ span.card-title+p {
   flex-wrap: wrap;
 }
 
-.card-title {
-  font-family: var(--main-font);
-}
 
-.card-action {
-  padding-bottom: 30px;
+ul#mobileNavBar.sidenav, .sidenav li>a {
+  background-color:var(--secondary-color);
 }
 
 
 
 
-.DGCpadding {
-  padding-left: 7%;
-}
 
-/* TODO: style sidenav */
-.sidenav {
-  background-color: white;
-}
-
-/* skills card css */
-.rowTitle{
-  padding-top: 10px;
+.card {
+  border: none;
+  background: #fafafa;
 }
 
 
-/* navbar css */
-ul.navLi li {
-  display: inline;
-  padding-left: 16px;
+/* full page nav bar */
+nav {
+  background-color: var(--main-color);
+  border-bottom: var(--accent-color) solid 3px;
 }
 
-.banner {
-  width: 100%;
-  height: auto;
-  margin-top: 63px;
+.navbar-fixed {
+  height: 64px;
 }
-
 
 .navLink {
   color: var(--secondary-color);
@@ -149,9 +124,20 @@ ul.navLi li {
   font-family: var(--main-font);
 }
 
-.notSoBig {
-  width: 25%;
+img.navLogo {
+  height: 60px;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 .socialMediaicon {
@@ -159,38 +145,9 @@ ul.navLi li {
 }
 
 
-.collection, .card{
-  border: none;
-}
 
 
-.name {
-  display: block;
-}
 
-.navbar-toggler {
-  border: none;
-  text-align: right;
-}
-
-.navbar-toggler-icon {
-  color: rebeccapurple;
-}
-
-.avatar {
-  display: block;
-}
-
-
-.view {
-  text-align: center;
-}
-
-.vlleft {
-  padding-left: 10px;
-  height: 100%;
-  border-left: solid 1px #A3ABB0 ;
-}
 
 .center {
   text-align: center;
@@ -200,7 +157,7 @@ ul.navLi li {
   text-align: left;
 }
 
-.material-icons {
+/* .material-icons {
   font-size: 20px;
   color: black;
   line-height: 0.7;
@@ -212,7 +169,13 @@ i.material-icons {
 
 .hamburgerIcon {
   display: none;
+} */
+
+
+#hamburgerTrigger{
+  color: var(--secondary-color);
 }
+
 
 #skillsTitle {
   text-align: left;

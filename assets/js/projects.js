@@ -1,9 +1,6 @@
 // globally instantiated variables/objects
 const htmlProjectList = document.getElementById("dynamicProjects");
 const projectHolder = document.getElementById("cardInnardsHere");
-const navBar = document.getElementById("switchableNavBar");
-let lastKnownScrollPosition = 0;
-
 
 const classAndFreelanceProjects = {
   ttfm: {
@@ -35,27 +32,6 @@ const classAndFreelanceProjects = {
   }
 }
 
-// const dallasGiveCampProjects ={
-//   dgcbtp: {
-//     fullTitle: "The Bermuda Turtle Project",
-//     avatarPic: "./assets/images/IconsAndLogos/BTP_icon.jpg",
-//     shortDesc: "Sea Turtle Conservancy 2018",
-//     longDesc: "Updated the entire site for the Bermuda Turtle Part, part of the Sea Turtle Conservancy. The design, structure, and placement was all redone by myself.<br><br>WordPress was used so non-developers can update the information as necessary independently.",
-//     chipsArray: ["HTML", "CSS", "WordPress"],
-//     sourceLink: "https://dallasgivecamp.org/",
-//     deployedLink: "http://bermudaturtleproject.org/"
-//   },
-//   dgctdt: {
-//     fullTitle: "Tour De Turtles",
-//     avatarPic: ".assets\images\IconsAndLogos\TourDeTurtles.PNG",
-//     shortDesc: "Sea Turtle Conservancy 2018",
-//     longDesc: "Updated the site for the Tour De Turtles, part of the Sea Turtle Conservancy. I was responsible for the layout and transferring of content from the older site to this new one.<br><br>WordPress was used so non-developers can update the information as necessary independently.",
-//     chipsArray: ["HTML", "CSS", "WordPress"],
-//     sourceLink: "https://dallasgivecamp.org/",
-//     deployedLink: "https://tourdeturtles.org/"
-//   }
-// }
-
 //functions
 const makeProjectAvatars = classAndFreelanceProjects => {
   let intervalCounter = 0;
@@ -71,9 +47,6 @@ const makeProjectAvatars = classAndFreelanceProjects => {
     intervalCounter++;
   }
 };
-
-
-
 
 // event listeners
 htmlProjectList.addEventListener("click", event => {
@@ -116,18 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
   var elems = document.querySelectorAll('.sidenav');
   var instances = M.Sidenav.init(elems);
 });
-
-document.addEventListener("scroll", () => {
-  let newScrollPosition = window.scrollY;
-  if(newScrollPosition < lastKnownScrollPosition){
-    navBar.style.top = "0";
-    lastKnownScrollPosition = newScrollPosition;      
-  } else {
-    navBar.style.top = "-100px";
-    lastKnownScrollPosition = newScrollPosition;
-  };
-});
-
 
 // on page load
 makeProjectAvatars(classAndFreelanceProjects);
