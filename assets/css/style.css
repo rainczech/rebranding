@@ -108,17 +108,14 @@ ul#mobileNavBar.sidenav, .sidenav li>a {
 }
 
 
-/* navbar css */
-ul.navLi li {
-  display: inline;
-  padding-left: 16px;
-}
-
 img.navLogo {
   height: 60px;
 }
 
-
+.card {
+  border: none;
+  background: #fafafa;
+}
 
 
 /* full page nav bar */
@@ -127,11 +124,6 @@ img.navLogo {
   font-size: 1.25rem;
   font-family: var(--main-font);
 }
-
-.notSoBig {
-  width: 25%;
-}
-
 
 .socialMediaicon {
   margin-bottom: 12px;

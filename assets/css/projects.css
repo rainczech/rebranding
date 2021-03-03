@@ -1,9 +1,7 @@
-.collection,
-.card {
+.collection {
   border: none;
 }
 
-.card,
 .collection .collection-item {
   background: #fafafa;
 }
