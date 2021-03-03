@@ -1,8 +1,13 @@
-function hamburgerToggle() {
-  var x = document.getElementById("headerLinksBucket");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+let lastKnownScrollPosition = 0;
+const navBar = document.getElementById("switchableNavBar");
+
+document.addEventListener("scroll", () => {
+  let newScrollPosition = window.scrollY;
+  if(newScrollPosition < lastKnownScrollPosition){
+    navBar.style.top = "0";
+    lastKnownScrollPosition = newScrollPosition;      
   } else {
-    x.style.display = "block";
-  }
-}
+    navBar.style.top = "-100px";
+    lastKnownScrollPosition = newScrollPosition;
+  };
+});

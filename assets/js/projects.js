@@ -1,9 +1,6 @@
 // globally instantiated variables/objects
 const htmlProjectList = document.getElementById("dynamicProjects");
 const projectHolder = document.getElementById("cardInnardsHere");
-const navBar = document.getElementById("switchableNavBar");
-let lastKnownScrollPosition = 0;
-
 
 const classAndFreelanceProjects = {
   ttfm: {
@@ -92,18 +89,6 @@ document.addEventListener('DOMContentLoaded', () => {
   var elems = document.querySelectorAll('.sidenav');
   var instances = M.Sidenav.init(elems);
 });
-
-document.addEventListener("scroll", () => {
-  let newScrollPosition = window.scrollY;
-  if(newScrollPosition < lastKnownScrollPosition){
-    navBar.style.top = "0";
-    lastKnownScrollPosition = newScrollPosition;      
-  } else {
-    navBar.style.top = "-100px";
-    lastKnownScrollPosition = newScrollPosition;
-  };
-});
-
 
 // on page load
 makeProjectAvatars(classAndFreelanceProjects);
