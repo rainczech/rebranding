@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Grace Ho</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
-    <!-- Compiled and minified CSS Materialize-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway:wght@400;700&display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
-    <link rel="stylesheet" href="assets\css\skills.css">
-  </head>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Grace Ho</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/reset.css" />
+  <!-- Compiled and minified CSS Materialize-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Raleway:wght@400;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="assets\css\skills.css">
+</head>
 
-  <body>
-    <div class="navbar-fixed" id="switchableNavBar">
-      <nav>
-        <div class="container">
-          <div class="nav-wrapper">
-            <a href="index.html"><img class="navLogo" src="assets\images\PersonalLogo .png"></a>
-            <a href="#" data-target="mobileNavBar" class="sidenav-trigger right"><i class="material-icons"
-                id="hamburgerTrigger">menu</i></a>
-            <ul class="right hide-on-med-and-down">
-              <li><a class="navLink" href="index.html#aboutMe">About Me</a></li>
-              <li><a class="navLink" href="skills.html">Skills</a></li>
-              <li><a class="navLink" href="projects.html">Coding Projects</a></li>
-            </ul>
-          </div>
+<body>
+  <div class="navbar-fixed" id="switchableNavBar">
+    <nav>
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html"><img class="navLogo" src="assets\images\PersonalLogo .png"></a>
+          <a href="#" data-target="mobileNavBar" class="sidenav-trigger right"><i class="material-icons"
+              id="hamburgerTrigger">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a class="navLink" href="index.html#aboutMe">About Me</a></li>
+            <li><a class="navLink" href="skills.html">Skills</a></li>
+            <li><a class="navLink" href="projects.html">Coding Projects</a></li>
+          </ul>
         </div>
-      </nav>
-    </div>
-    <ul class="sidenav" id="mobileNavBar">
-      <li><a class="navLink" href="index.html#aboutMe">About Me</a></li>
-      <li><a class="navLink" href="skills.html">Skills</a></li>
-      <li><a class="navLink" href="projects.html">Projects</a></li>
-    </ul>
-<main>
-  <!-- <div class="container"> -->
-    
+      </div>
+    </nav>
+  </div>
+  <ul class="sidenav" id="mobileNavBar">
+    <li><a class="navLink" href="index.html#aboutMe">About Me</a></li>
+    <li><a class="navLink" href="skills.html">Skills</a></li>
+    <li><a class="navLink" href="projects.html">Projects</a></li>
+  </ul>
+  <main>
+    <!-- <div class="container"> -->
+
     <div class="row">
       <div class="col m3 offset-m1">
         <h2>Certifications & Badges</h2>
@@ -55,7 +55,7 @@
       </div>
       <div class="col m7">
         <h2>Technical Skills</h2>
-      <div class="card">
+        <div class="card">
           <div class="card-content">
             <div class="row">
               <p class="col s12">Back End Technology</p>
@@ -137,14 +137,26 @@
       </div>
       <div class="col m1"></div>
     </div>
-  <!-- </div> -->
-</main>
+    <div class="fixed-action-btn animate__animated animate__bounce animate__repeat-3 animate__delay-5s">
+      <a class="btn-floating btn-large orange accent-2 tooltipped" data-position="left" data-tooltip="Contact Me!">
+        <i class="large material-icons">person_add</i>
+      </a>
+      <ul>
+        <li><a href="mailto:hi@graceho.me" target="_blank" class="btn-floating red"><i
+              class="material-icons">email</i></a></li>
+        <li><a href="https://github.com/rainczech" target="_blank" class="btn-floating blue"><img
+              src="assets\images\IconsAndLogos\gitLogo.png" alt="" id="gitLogo"></a></li>
+        <li><a class="btn-floating green" href="https://www.linkedin.com/in/grace-t-ho" target="_blank"><img
+              src="assets\images\IconsAndLogos\LinkedInLogo.png" id="linkedInLogo"></a></li>
+      </ul>
+    </div>
+  </main>
   <footer> © Grace Ho 2018-2021 </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-<script src="assets\js\script.js"></script>
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="assets\js\script.js"></script>
 </body>
 
 </html>
