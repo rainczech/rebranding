@@ -35,16 +35,10 @@ main {
   flex: 1 0 auto;
 }
 
-h2 {
-  color: var(--accent-color);
-}
-
 hr {
   background-color: var(--accent-color);
   color: var(--accent-color);
 }
-
-
 
 label{
   padding-bottom: 10px;
@@ -66,6 +60,7 @@ h2 {
   font-family: var(--secondary-font);
   font-size: 2rem;
   text-align: center;
+  color: var(--accent-color);
 }
 
 
@@ -75,8 +70,6 @@ p {
   font-size: 1.25rem;
   line-height: 1.4rem;
 }
-
-
 
 blockquote {
   border-left-color: var(--secondary-color);
@@ -97,9 +90,6 @@ blockquote {
 ul#mobileNavBar.sidenav, .sidenav li>a {
   background-color:var(--secondary-color);
 }
-
-
-
 
 
 .card {
@@ -133,9 +123,6 @@ img.navLogo {
   text-align: center;
 }
 
-.contactList {
-  text-align: left;
-}
 
 #gitLogo, #linkedInLogo {
   margin-bottom: -8px;
@@ -146,26 +133,6 @@ img.navLogo {
 #hamburgerTrigger{
   color: var(--secondary-color);
 }
-
-
-#skillsTitle {
-  text-align: left;
-}
-
-#contactTitle {
-  text-align: left;
-}
-
-#resume {
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-#emailIcon {
-  line-height: 0.7;
-}
-
-
 
 
 
@@ -180,13 +147,7 @@ img.navLogo {
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1200px) {
-  #seaTurtleLogo {
-      width: 70%;
-      height: auto;
-      margin-top: 25px;
-      margin-left: auto;
-      margin-right: auto;
-  }
+
 }
 
 
@@ -208,72 +169,10 @@ img.navLogo {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
-  .card-image {
-      display: none;
-  }
-
-  .navLink {
-      font-size: 1.25rem;
-      padding: 7px 16px;
-      display: block;
-      text-decoration: none;
-      background: #36454F;
-      color: #D4D0D0;
-  }
-
-  .hamburgerIcon {
-      background: black;
-      display: block;
-      color: White;
-      position: absolute;
-      right: 10px;
-      top: 20px;
-  }
-
-  #hamburgerIconStyling {
-      height: 50%;
-  }
-
-  #headerLinksBucket {
-      display: none;
-      top: 8%;
-      border: none;
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 767px) {
 
-  .navLink {
-      font-size: 1.75rem;
-      padding: 7px 16px;
-      display: block;
-      text-decoration: none;
-      background: #36454F;
-      color: #D4D0D0;
-  }
-
-  .card-image {
-      display: none;
-  }
-
-  .hamburgerIcon {
-      background: black;
-      display: block;
-      color: White;
-      position: absolute;
-      right: 10px;
-      top: 20px;
-      height: 5rem;
-  }
-
-  #hamburgerIconStyling {
-      height: 2rem;
-  }
-
-  #headerLinksBucket {
-      display: none;
-      top: 5%;
-  }
 
 }
