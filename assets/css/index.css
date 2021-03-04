@@ -44,5 +44,54 @@ div.row.banner.flex {
 }
 
 
+#landingForMobile {
+  display: none;
+}
 
+
+@media only screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+  h4{
+    font-size:1.5rem;
+  }
+
+  div.col.m6.l4.vertAlign{
+    display: none;
+  }
+
+  #landingCardContent {
+    margin-top: 10%;
+  }
+  #landingcard {
+    left: 20%;
+  }
+  
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width:600px) {
+  div.row.banner.flex{
+    display: none;
+  }
+ 
+  #landingForMobile {
+    display: block;
+  }
+ 
+ #newLandingPhoto{
+   position: relative;
+ }
+ 
+ #newLandingText{
+   position: absolute;
+   top:60%;
+   color: var(--tertiary-color);
+   background-color: var(--secondary-color);
+   padding: 5px 10px;
+   width: 100%;
+ }
+}
 

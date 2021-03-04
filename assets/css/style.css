@@ -134,13 +134,10 @@ img.navLogo {
   color: var(--secondary-color);
 }
 
-#landingForMobile {
-  display: none;
-}
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 767px) {
-  div.row.banner.flex{
+  /* div.row.banner.flex{
     display: none;
   }
  
@@ -158,13 +155,23 @@ img.navLogo {
    color: var(--tertiary-color);
    background-color: var(--secondary-color);
    padding: 5px 10px;
-   width: 100%;
+   width: 100%; */
 
 }
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  /* h1 {
+
+  } */
+}
+
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width:600px) {
-  div.row.banner.flex{
+@media only screen and (max-width:600px) {
+  /* div.row.banner.flex{
     display: none;
   }
  
@@ -183,12 +190,12 @@ img.navLogo {
    background-color: var(--secondary-color);
    padding: 5px 10px;
    width: 100%;
- }
+ } */
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
- div.row.banner.flex{
+ /* div.row.banner.flex{
    display: none;
  }
 
@@ -207,7 +214,7 @@ img.navLogo {
   background-color: var(--secondary-color);
   padding: 5px 10px;
   width: 100%;
-}
+} */
 
 }
 
