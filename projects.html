@@ -50,12 +50,12 @@
       </div>
       <div class="row">
         <!-- container for project avatars to populate after dynamically generated-->
-        <div class="col m4">
+        <div class="col s12 l4">
           <ul class="collection" id="dynamicProjects">
           </ul>
         </div>
         <!-- container for project details to populate -->
-        <div class="col m8">
+        <div class="col s12 l8">
           <div class="card medium" id="cardInnardsHere">
             <p class="animate__animated animate__fadeIn animate__slow card-content center-align">click on a project on
               the left to see more
@@ -64,6 +64,7 @@
           </div>
         </div>
       </div>
+      <div class="row"></div>
       <div class="divider"></div>
       <div class="row" id="dallasGiveCamp">
         <h2>
@@ -76,7 +77,7 @@
       </div>
       <!-- Tour De Turtles Row -->
       <div class="row flex">
-        <div class="col m7">
+        <div class="col hide-on-med-and-down l7">
           <div class="video-container">
             <iframe
               src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fgrace.ho.946517%2Fposts%2F10157678057473233&width=500&show_text=true&height=504&appId"
@@ -85,7 +86,7 @@
               allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
           </div>
         </div>
-        <div class="col offset-m1 m3 vertAlign">
+        <div class="col offset-l1 l3 hide-on-med-and-down vertAlign">
           <p class="orange-text text-accent-2">
             It is easy to underestimate the impact one can have as a developer to solve problems, encourage the sharing
             of information, and to make the world just a little bit better.<br><br>
@@ -93,25 +94,25 @@
             supported through Dallas Give Camp by reworking their website over the past 2 events!
           </p>
         </div>
-        <div class="col m1"></div>
+        <div class="col hide-on-med-and-down l1"></div>
       </div>
       <!-- Dallas Give Camp Information -->
       <div class="row">
-        <div class="card col m12 medium">
-          <div class="col m9 card-content">
+        <div class="card col l12 medium">
+          <div class="col s12 card-content">
             <span class="card-title">Dallas Give Camp Summary</span>
             <p>I updated the websites for the Bermuda Turtle Project and Tour De Turtles, part of the Sea Turtle
               Conservancy. The design, structure, layout, and transferring of content from the older site was done
               mostly by myself.</p>
             <br>
             <p>WordPress was used so non-developers can update the information as necessary independently.</p>
-            <hr>
-            <label>Technologies Used:</label>
-            <div class="chip">WordPress</div>
-            <div class="chip">HTML</div>
-            <div class="chip">CSS</div>
+            <hr class="hide-on-small-only">
+            <label class="hide-on-small-only">Technologies Used:</label>
+            <div class="chip hide-on-small-only">WordPress</div>
+            <div class="chip hide-on-small-only">HTML</div>
+            <div class="chip hide-on-small-only">CSS</div>
           </div>
-          <div class="col m3 card-content">
+          <div class="col hide-on-small-only l3 card-content">
             <span class="card-title">Years Participated</span>
             <ul class="collection">
               <li class="collection-item avatar">
@@ -126,19 +127,21 @@
               </li>
             </ul>
           </div>
-          <div class="card-action">
-            <p class="left col m4">
-              <a href="https://dallasgivecamp.org/" target="_blank">Dallas Give Camp Site</a>
+          <div class="card-action" id="DGCCardAction">
+            <p class="left col s12 l4">
+              <a href="https://dallasgivecamp.org/" target="_blank">Dallas Give Camp</a>
             </p>
-            <p class="left col m4">
-              <a href="https://tourdeturtles.org/" target="_blank">Tour De Turtles Site</a>
+            <p class="left col s12 l4">
+              <a href="https://tourdeturtles.org/" target="_blank">Tour De Turtles</a>
             </p>
-            <p class="left col m4">
-              <a href="http://bermudaturtleproject.org/" target="_blank">Bermuda Turtle Project Site</a>
+            <p class="left col s12 l4">
+              <a href="http://bermudaturtleproject.org/" target="_blank">Bermuda Turtle Project</a>
             </p>
+        
           </div>
         </div>
       </div>
+      <div class="row"></div>
       <div class="fixed-action-btn animate__animated animate__bounce animate__repeat-3 animate__delay-5s">
         <a class="btn-floating btn-large orange accent-2 tooltipped" data-position="left" data-tooltip="Contact Me!">
           <i class="large material-icons">person_add</i>

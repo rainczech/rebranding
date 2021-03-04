@@ -58,10 +58,12 @@ htmlProjectList.addEventListener("click", event => {
     <p>
       ${bigCardProp.longDesc}
     </p>
-    <hr>
-    <label>Technologies Used:</label>
-    <div>    
+    <hr class="hide-on-small-only">
+    <label class="hide-on-small-only">Technologies Used:</label>
+    <div class="hide-on-small-only">    
       ${bigCardProp.chipsArray.map(chipText => `<div class="chip">${chipText}</div>`).join("")}
+    </div>
+    </div>
       <div class="card-action">
         <p class="left">
           <a href="${bigCardProp.deployedLink}" target="_blank">View Site</a>
@@ -69,9 +71,8 @@ htmlProjectList.addEventListener("click", event => {
         <p class="left">
           <a href="${bigCardProp.sourceLink}" target="_blank">View Source</a>
         </p>
-      </div>
-    </div>
-    </div>`
+      </div>`
+    
 
   projectHolder.innerHTML = projectCardDisplayInnards; 
 });
