@@ -21,27 +21,25 @@ h3 {
   font-family: var(--main-font);
 }
 
-@media only screen and (max-width: 768px) {
-  
-  
-}
+@media only screen and (max-width: 768px) {}
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width:600px) {
-  div.row.banner.flex{
+  div.row.banner.flex {
     display: none;
   }
 
-  .card.medium{
+  .card.medium {
     height: fit-content;
   }
+
   .card.medium .card-action {
     bottom: -40px;
     /* margin-bottom: 40px; */
   }
 
-  #DGCCardAction{
+  #DGCCardAction {
     bottom: -100px;
     margin-bottom: 100px;
   }

@@ -72,9 +72,9 @@ htmlProjectList.addEventListener("click", event => {
           <a href="${bigCardProp.sourceLink}" target="_blank">View Source</a>
         </p>
       </div>`
-    
 
-  projectHolder.innerHTML = projectCardDisplayInnards; 
+
+  projectHolder.innerHTML = projectCardDisplayInnards;
 });
 
 // on page load
