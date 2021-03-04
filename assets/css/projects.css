@@ -26,10 +26,7 @@ h3 {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width:600px) {
-  div.row.banner.flex {
-    display: none;
-  }
-
+ 
   .card.medium {
     height: fit-content;
   }
@@ -40,8 +37,8 @@ h3 {
   }
 
   #DGCCardAction {
-    bottom: -100px;
-    margin-bottom: 100px;
+    bottom: -280px;
+    margin-bottom: 200px;
   }
 
 }

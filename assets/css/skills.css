@@ -1,10 +1,4 @@
 .rowTitle{
     padding-top: 10px;
+    font-weight:700;
   }
-
-  .vlleft {
-    padding-left: 10px;
-    height: 100%;
-    border-left: solid 1px #A3ABB0 ;
-  }
-  
