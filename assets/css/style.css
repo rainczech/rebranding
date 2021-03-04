@@ -129,26 +129,6 @@ img.navLogo {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-.socialMediaicon {
-  margin-bottom: 12px;
-}
-
-
-
-
-
-
 .center {
   text-align: center;
 }
@@ -157,20 +137,11 @@ img.navLogo {
   text-align: left;
 }
 
-/* .material-icons {
-  font-size: 20px;
-  color: black;
-  line-height: 0.7;
+#gitLogo, #linkedInLogo {
+  margin-bottom: -8px;
+  max-height: 25px;
+  width: auto;
 }
-
-i.material-icons {
-  margin-bottom: -20px;
-}
-
-.hamburgerIcon {
-  display: none;
-} */
-
 
 #hamburgerTrigger{
   color: var(--secondary-color);
