@@ -11,18 +11,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* ffab40
-orange accent-2 */
-
-/* pewter: #D4D0D0
-grey: #A3ABB0
-charcoal: #36454F
- */
-/* Maroon #69124A
-Dark BLue #080B39
-Midnight Blue 14527C
-pink #F248B6 */
-
 body {
   background-color: var(--main-color);
   display: flex;
