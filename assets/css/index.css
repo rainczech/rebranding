@@ -80,18 +80,7 @@ div.row.banner.flex {
   #landingForMobile {
     display: block;
   }
- 
- #newLandingPhoto{
-   position: relative;
- }
- 
- #newLandingText{
-   position: absolute;
-   top:60%;
-   color: var(--tertiary-color);
-   background-color: var(--secondary-color);
-   padding: 5px 10px;
-   width: 100%;
- }
+
+
 }
 
