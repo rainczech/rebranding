@@ -1,6 +1,8 @@
 // globally instantiated variables/objects
 const htmlProjectList = document.getElementById("dynamicProjects");
 const projectHolder = document.getElementById("cardInnardsHere");
+const childrenOfHtmlProjectList = htmlProjectList.children;
+const fakeArray = ["apple", "banana", "peach"];
 
 const classAndFreelanceProjects = {
   ttfm: {
@@ -48,6 +50,16 @@ const makeProjectAvatars = classAndFreelanceProjects => {
   }
 };
 
+
+const addSelectedClass = element => {
+  element = event.target.closest("li");
+  for (let i = 0; i < childrenOfHtmlProjectList.length; i++) {
+    childrenOfHtmlProjectList[i].classList.remove("orange", "accent-1");
+    console.log(childrenOfHtmlProjectList[i])
+  }
+  element.classList.add("orange", "accent-1");
+}
+
 // event listeners
 htmlProjectList.addEventListener("click", event => {
   const selectedProject = event.target.closest("li");
@@ -75,6 +87,7 @@ htmlProjectList.addEventListener("click", event => {
 
 
   projectHolder.innerHTML = projectCardDisplayInnards;
+  addSelectedClass(event);
 });
 
 // on page load

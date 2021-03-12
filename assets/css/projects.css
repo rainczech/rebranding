@@ -21,6 +21,10 @@ h3 {
   font-family: var(--main-font);
 }
 
+.selectedProject {
+  background-color: #ffd180;
+}
+
 @media only screen and (max-width: 768px) {}
 
 
