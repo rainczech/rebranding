@@ -40,7 +40,7 @@ const makeProjectAvatars = classAndFreelanceProjects => {
   for (const prop in classAndFreelanceProjects) {
     const loopProp = classAndFreelanceProjects[prop];
     const avatarListItem =
-      `<li class="waves-effect waves-orange collection-item avatar animate__animated animate__fadeInLeft animate__delay-${intervalCounter}s" data-project="${prop}">      
+      `<li class="waves-effect waves-orange collection-item avatar animate__animated animate__fadeInLeft animate__delay-${intervalCounter}s ${intervalCounter === 0 ? "orange accent-1": ""}" data-project="${prop}">      
       <img src="${loopProp.avatarPic}" alt="test this for me logo" class="circle">
       <span class="title">${loopProp.fullTitle}</span>
       <p>${loopProp.shortDesc}</p>      
