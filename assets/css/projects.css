@@ -2,11 +2,6 @@
   border: none;
 }
 
-.collection .collection-item {
-  background: #fafafa;
-}
-
-
 .avatar {
   display: block;
 }
@@ -33,7 +28,6 @@ h3 {
 
   .card.medium .card-action {
     bottom: -40px;
-    /* margin-bottom: 40px; */
   }
 
   #DGCCardAction {
