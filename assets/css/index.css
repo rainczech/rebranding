@@ -49,6 +49,48 @@ div.row.banner.flex {
 }
 
 
+
+
+@media only screen and (max-width: 1300px) {
+
+  div.col.m6.l4.vertAlign{
+    display: none;
+  }
+
+  #landingCardContent {
+    margin-top: 10%;
+  }
+  #landingcard {
+    left: 20%;
+  }
+  
+}
+
+
+@media only screen and (max-width: 1200px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h4{
+    font-size:2rem;
+  }
+
+  div.col.m6.l4.vertAlign{
+    display: none;
+  }
+
+  #landingCardContent {
+    margin-top: 15%;
+  }
+  #landingcard {
+    left: 20%;
+  }
+  
+}
+
+
+
+
 @media only screen and (max-width: 768px) {
   h1 {
     font-size: 2rem;

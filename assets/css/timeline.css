@@ -1,0 +1,178 @@
+small{
+  font-size: 90%;
+}
+
+.timelineLink  {
+  color:#00264C;
+}
+
+.timeline {
+  list-style: none;
+  padding: 20px;
+  position: relative;
+}
+
+/* the actual vertical line */
+.timeline:before {
+  top: 40px;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 3px;
+  background-color: var(--secondary-color);
+  left: 50%;
+}
+
+.timeline-item {
+  position: relative;
+}
+
+.timeline-item:before,
+.timeline-item:after {
+  content: "";
+  display: table;
+}
+.timeline-item:after {
+  clear: both;
+}
+
+.timeline-heading {
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  color: var(--tertiary-color);
+  border-bottom: 1px solid var(--tertiary-color);
+}
+
+/* circular container of badge */
+.timeline-badge {
+  color: #fff;
+  width: 45px;
+  height: 45px;
+  line-height: 43px;
+  font-size: 22px;
+  text-align: center;
+  position: absolute;
+  top: 18px;
+  left: 50%;
+  margin-left: -11px;
+  background-color: var(--accent-color);
+  border: 3px solid var(--accent-color);
+  z-index: 100;
+  border-radius: 50%;
+}
+
+.legend-badge {
+  color: #fff;
+  text-align: center;
+  /* position: absolute; */
+  top: 18px;
+  left: 50%;
+  margin-left: -11px;
+  width: 45px;
+  height: 45px;
+  line-height: 43px;
+  font-size: 22px;
+  background-color: var(--accent-color);
+  border: 3px solid var(--accent-color);
+  z-index: 100;
+  border-radius: 50%;
+}
+
+.timeline-panel {
+  position: relative;
+  width: 46%;
+  float: left;
+  border-radius: 2px;
+  padding: 20px;
+}
+
+/* the triangles to point at badge */
+.timeline-panel:before {
+  position: absolute;
+  top: 20px;
+  right: -16px;
+  display: inline-block;
+  border-top: 16px solid transparent;
+  border-left: 16px solid #fff;
+  border-right: 0 solid #fff;
+  border-bottom: 16px solid transparent;
+  content: " ";
+}
+.timeline-title{
+  margin: 0;
+  color: inherit;
+  font-family: var(--secondary-font);
+}
+
+.timeline-item:last-child:nth-child(even),
+.timeline-item:last-child:nth-child(odd)  {
+  float: right;
+  width: 100%;
+}
+.timeline-item:nth-child(even) .timeline-panel {
+  float: right;
+  left: 16px;
+}
+/* positioning for triangles for timeline-item on right */
+.timeline-item:nth-child(even) .timeline-panel:before {
+  border-left-width: 0;
+  border-right-width: 14px;
+  left: -14px;
+  right: auto;
+}
+
+.legendIcon{
+  display: block;
+  float: right;
+}
+
+
+@media only screen and (max-width: 768px){
+  .timeline-panel:before {
+   display: none;
+  }
+
+  .timeline{
+    padding: 0;
+  }
+
+  .timeline-panel::after {
+      content: "";
+      clear: both;
+      display: table;
+  }
+
+  .timeline-badge {
+    display: none;
+  }
+
+  .timeline-item{
+    position:relative;
+    float: none;
+    /* margin-bottom: 1rem; */
+  }
+
+  .timeline-item:nth-child(even) .timeline-panel{
+    float: right;
+    left: 0;
+  }
+
+  .timeline-item:last-child:nth-child(even),
+.timeline-item:last-child:nth-child(odd)  {
+  float: right;
+}
+
+
+  .timeline-panel {
+    display: block;
+    float: none;
+    width: 100%;
+    border-radius: 2px;
+    padding: 20px;
+  }
+
+  .timeline:before {
+    bottom: -10px;
+  }
+
+}

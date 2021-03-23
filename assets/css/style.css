@@ -63,6 +63,14 @@ blockquote {
   border-left-color: var(--secondary-color);
 }
 
+nav ul li.active{
+  background-color: var(--accent-color);
+}
+nav ul li.active a{
+  color: white;
+  font-weight: bold;
+}
+
 .vertAlign {
  align-items: center;
  justify-content: center;
