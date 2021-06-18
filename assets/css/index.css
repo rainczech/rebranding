@@ -3,6 +3,16 @@ h1 {
   font-size: 5rem;
 }
 
+h3{
+  font-family: var(--main-font);
+  font-size: 2rem;
+  margin-top:-1%;
+  margin-left: 1%;
+  padding-left:1%;
+  background-color: #fff;
+  width: 17%;
+}
+
 
 h4 {
   font-family: var(--main-font);
@@ -31,6 +41,21 @@ div.row.banner.flex {
   background-color: var(--secondary-color);
 }
 
+.sameLine {
+  display:flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+.aboutMePicPadding{
+  padding: 0 2%;
+}
+
+.fieldsetBorder{
+  border:2px solid var(--secondary-color);
+}
+
+
 #landingcard {
   background-color: var(--main-color);
   color: white;
@@ -49,7 +74,19 @@ div.row.banner.flex {
   display: none;
 }
 
+#aboutMeWidth{
+  width: 85%;
+  margin-top:3%;
+}
 
+#flexCenter{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+  border-top: 3px solid var(--accent-color);
+  border-bottom: 3px solid var(--accent-color);
+  padding-bottom: 2%;
+}
 
 
 @media only screen and (max-width: 1300px) {
