@@ -5,9 +5,11 @@ document.addEventListener("scroll", () => {
   let newScrollPosition = window.scrollY;
   if(newScrollPosition < lastKnownScrollPosition){
     navBar.style.top = "0";
+    navBar.style.transition = "all 1s";
     lastKnownScrollPosition = newScrollPosition;      
   } else {
     navBar.style.top = "-100px";
+    navBar.style.transition = "all 1s";
     lastKnownScrollPosition = newScrollPosition;
   };
 });
