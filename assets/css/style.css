@@ -91,6 +91,29 @@ ul#mobileNavBar.sidenav, .sidenav li>a {
   border: none;
 }
 
+.imageAndTextContainer {
+  position: relative;
+  text-align: center;
+  color: white;
+  margin-left: 1.5rem;
+}
+
+.bottomCenteredOnImage {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.hoverOpaque {
+  opacity: 0;
+  color: black;
+  font-weight: bold;
+  font-size:1.25rem;
+  font-family: var(--main-font);
+}
+
 
 /* full page nav bar */
 nav {

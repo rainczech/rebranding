@@ -32,3 +32,22 @@ document.addEventListener('DOMContentLoaded', () => {
   var instances = M.Sidenav.init(elems);
 });
 
+
+const imageInfoDisplay = (event) =>{
+  let image = event.target;
+  let text = event.target.nextElementSibling
+  image.style.opacity = 0.4;
+  text.style.opacity = 1
+  image.style.transition = "all 1s";
+  text.style.transition = "all 1s";
+
+}
+
+const imageInfoHide = (event) => {
+  let image = event.target;
+  let text = event.target.nextElementSibling
+  image.style.opacity = 1;
+  text.style.opacity = 0;
+  image.style.transition = "all 1s";
+  text.style.transition = "all 1s";
+}
