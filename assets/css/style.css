@@ -137,6 +137,11 @@ nav {
   align-items: center;
 }
 
+img#mobileNavLogo{
+  display: none;
+  height: 60px;
+}
+
 img.navLogo {
   height: 60px;
 }
@@ -155,4 +160,17 @@ img.navLogo {
 
 #hamburgerTrigger{
   color: var(--secondary-color);
+}
+
+@media only screen and (max-width:600px) {
+ 
+  .nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  img#mobileNavLogo{
+    display: block;
+  }
+
 }
